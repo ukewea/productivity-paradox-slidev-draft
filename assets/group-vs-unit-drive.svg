@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Group drive versus unit drive factory electrification</title>
+  <desc id="desc">A side-by-side schematic contrasting retrofit group drive with redesigned unit drive.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#334155"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fafc}
+      .panel{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .title{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#0f172a}
+      .label{font-family:Inter,Arial,sans-serif;font-size:18px;fill:#334155}
+      .small{font-family:Inter,Arial,sans-serif;font-size:15px;fill:#475569}
+      .muted{fill:#64748b}
+      .accent{fill:#0f766e}
+      .warn{fill:#b45309}
+      .line{stroke:#334155;stroke-width:5;fill:none;stroke-linecap:round}
+      .thin{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round}
+      .belt{stroke:#b45309;stroke-width:4;fill:none;stroke-linecap:round}
+      .wire{stroke:#0f766e;stroke-width:4;fill:none;stroke-linecap:round;marker-end:url(#arrow)}
+      .shaft{stroke:#475569;stroke-width:8;fill:none;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="560"/>
+  <rect class="panel" x="35" y="45" width="535" height="470" rx="8"/>
+  <rect class="panel" x="630" y="45" width="535" height="470" rx="8"/>
+
+  <text class="title" x="70" y="92">Group drive / retrofit</text>
+  <text class="small" x="70" y="122">new motor, old mechanical architecture</text>
+
+  <text class="title" x="665" y="92">Unit drive / redesign</text>
+  <text class="small" x="665" y="122">power moves by wire; machines get local motors</text>
+
+  <!-- group drive factory ceiling shaft -->
+  <line class="shaft" x1="90" y1="175" x2="510" y2="175"/>
+  <circle cx="125" cy="175" r="17" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <circle cx="265" cy="175" r="17" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <circle cx="405" cy="175" r="17" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <text class="small" x="217" y="157">overhead line shaft</text>
+
+  <!-- group drive motor -->
+  <rect x="85" y="320" width="115" height="65" rx="8" fill="#fed7aa" stroke="#b45309" stroke-width="3"/>
+  <circle cx="180" cy="352" r="18" fill="#ffedd5" stroke="#b45309" stroke-width="3"/>
+  <text class="label" x="102" y="358">motor</text>
+  <path class="belt" d="M178 330 C190 270 195 230 180 188"/>
+
+  <!-- group drive belts down to machines -->
+  <path class="belt" d="M125 192 C120 242 118 276 122 320"/>
+  <path class="belt" d="M265 192 C262 245 260 278 263 320"/>
+  <path class="belt" d="M405 192 C402 245 400 278 403 320"/>
+
+  <!-- machines group -->
+  <rect x="88" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="230" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="370" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text class="small" x="103" y="435">machine</text>
+  <text class="small" x="245" y="435">machine</text>
+  <text class="small" x="385" y="435">machine</text>
+
+  <text class="small" x="70" y="485">Mechanically coupled: friction, layout constraints, broad shutdowns.</text>
+
+  <!-- unit drive power panel -->
+  <rect x="682" y="170" width="95" height="130" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  <text class="label" x="701" y="218">power</text>
+  <text class="label" x="704" y="244">panel</text>
+
+  <!-- unit drive machines with local motors -->
+  <g>
+    <rect x="840" y="160" width="110" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="940" cy="189" r="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="990" y="160" width="110" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="1090" cy="189" r="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="840" y="315" width="110" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="940" cy="344" r="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  </g>
+  <g>
+    <rect x="990" y="315" width="110" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="1090" cy="344" r="18" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  </g>
+
+  <text class="small" x="871" y="243">machines get local motors</text>
+
+  <path class="wire" d="M777 210 C815 200 820 190 918 190"/>
+  <path class="wire" d="M777 225 C855 225 900 188 1068 188"/>
+  <path class="wire" d="M777 250 C825 272 830 342 918 342"/>
+  <path class="wire" d="M777 265 C850 300 900 342 1068 342"/>
+
+  <text class="small" x="665" y="485">Mechanically decoupled: flexible layout, local control, isolated maintenance.</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">U.S. factory electrification diffusion, 1899 to 1929</title>
+  <desc id="desc">Line chart showing factory mechanical drive electrification rising from less than five percent in 1899 to more than fifty percent by 1919.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}
+      .axis{stroke:#334155;stroke-width:2}
+      .grid{stroke:#cbd5e1;stroke-width:1}
+      .line{stroke:#0f766e;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .threshold{stroke:#b45309;stroke-width:3;stroke-dasharray:10 8}
+      .title{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#0f172a}
+      .label{font-family:Inter,Arial,sans-serif;font-size:17px;fill:#334155}
+      .small{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#475569}
+      .big{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:700;fill:#0f172a}
+      .value{font-family:Inter,Arial,sans-serif;font-size:28px;font-weight:800;fill:#0f766e}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="560"/>
+  <text class="title" x="70" y="58">Factory electrification was still early in 1900</text>
+  <text class="small" x="70" y="86">Factory mechanical drive electrified, U.S. manufacturing</text>
+
+  <line class="axis" x1="115" y1="430" x2="1080" y2="430"/>
+  <line class="axis" x1="115" y1="112" x2="115" y2="430"/>
+
+  <g>
+    <line class="grid" x1="115" y1="430" x2="1080" y2="430"/>
+    <line class="grid" x1="115" y1="350.5" x2="1080" y2="350.5"/>
+    <line class="grid" x1="115" y1="271" x2="1080" y2="271"/>
+    <line class="grid" x1="115" y1="191.5" x2="1080" y2="191.5"/>
+    <line class="grid" x1="115" y1="112" x2="1080" y2="112"/>
+    <text class="small" x="72" y="435">0%</text>
+    <text class="small" x="64" y="355">20%</text>
+    <text class="small" x="64" y="276">40%</text>
+    <text class="small" x="64" y="196">60%</text>
+    <text class="small" x="64" y="117">80%</text>
+  </g>
+
+  <line class="threshold" x1="115" y1="231.25" x2="1080" y2="231.25"/>
+  <text class="label" x="892" y="219">50% diffusion threshold</text>
+
+  <g>
+    <text class="small" x="99" y="462">1899</text>
+    <text class="small" x="260" y="462">1904</text>
+    <text class="small" x="421" y="462">1909</text>
+    <text class="small" x="582" y="462">1914</text>
+    <text class="small" x="743" y="462">1919</text>
+    <text class="small" x="904" y="462">1924</text>
+    <text class="small" x="1064" y="462">1929</text>
+  </g>
+
+  <!-- y scale 0-80 pct: y = 430 - value*3.975 -->
+  <polyline class="line" points="115,410.9 276,384.3 437,331.8 598,280.5 759,218.9 920,163.3 1080,118.4"/>
+
+  <g fill="#0f766e">
+    <circle cx="115" cy="410.9" r="7"/>
+    <circle cx="276" cy="384.3" r="7"/>
+    <circle cx="437" cy="331.8" r="7"/>
+    <circle cx="598" cy="280.5" r="7"/>
+    <circle cx="759" cy="218.9" r="7"/>
+    <circle cx="920" cy="163.3" r="7"/>
+    <circle cx="1080" cy="118.4" r="7"/>
+  </g>
+
+  <rect x="145" y="308" width="235" height="86" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text class="value" x="162" y="342">&lt;5%</text>
+  <text class="small" x="162" y="366">of factory mechanical drive</text>
+  <text class="small" x="162" y="386">was electrified in 1899</text>
+
+  <rect x="705" y="112" width="245" height="92" rx="8" fill="#ecfdf5" stroke="#99f6e4"/>
+  <text class="value" x="724" y="147">~50%</text>
+  <text class="small" x="724" y="171">diffusion around 1919</text>
+  <text class="small" x="724" y="191">before the 1920s payoff</text>
+
+  <rect x="115" y="492" width="970" height="42" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="small" x="135" y="519">Lighting was also early: in 1899, electric light reached about 3% of all U.S. residences and 8% of urban dwellings.</text>
+</svg>
