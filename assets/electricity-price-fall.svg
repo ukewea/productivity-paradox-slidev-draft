@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">U.S. residential electricity price, 1902 to 1940</title>
+  <desc id="desc">Line chart of U.S. average residential electricity price in nominal cents per kilowatt-hour, falling from 16.2 cents in 1902 to 3.84 cents in 1940, with the 1914 to 1917 period highlighted as the point where rates fell substantially relative to the general price level.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}
+      .axis{stroke:#334155;stroke-width:2}
+      .grid{stroke:#cbd5e1;stroke-width:1}
+      .line{stroke:#0f766e;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .title{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#0f172a}
+      .label{font-family:Inter,Arial,sans-serif;font-size:17px;fill:#334155}
+      .small{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#475569}
+      .val{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:700;fill:#0f766e}
+      .warn{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:700;fill:#b45309}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="560"/>
+  <text class="title" x="70" y="46">Electricity got cheap — and cheaper still in real terms</text>
+  <text class="small" x="70" y="72">U.S. average residential price, ¢ per kWh (nominal)</text>
+
+  <!-- 1914-17 band -->
+  <rect x="462.5" y="110" width="71.25" height="330" fill="#fff7ed" stroke="#fdba74"/>
+  <text class="warn" x="430" y="100">1914–17: rates fall sharply vs the general price level</text>
+
+  <!-- axes -->
+  <line class="axis" x1="130" y1="440" x2="1080" y2="440"/>
+  <line class="axis" x1="130" y1="110" x2="130" y2="440"/>
+
+  <!-- y grid -->
+  <g>
+    <line class="grid" x1="130" y1="440" x2="1080" y2="440"/>
+    <line class="grid" x1="130" y1="348.3" x2="1080" y2="348.3"/>
+    <line class="grid" x1="130" y1="256.7" x2="1080" y2="256.7"/>
+    <line class="grid" x1="130" y1="165" x2="1080" y2="165"/>
+    <text class="small" x="92" y="445">0¢</text>
+    <text class="small" x="92" y="353">5¢</text>
+    <text class="small" x="86" y="262">10¢</text>
+    <text class="small" x="86" y="170">15¢</text>
+  </g>
+
+  <!-- x ticks -->
+  <g>
+    <text class="small" x="158" y="465">1900</text>
+    <text class="small" x="345" y="465">1910</text>
+    <text class="small" x="583" y="465">1920</text>
+    <text class="small" x="820" y="465">1930</text>
+    <text class="small" x="1058" y="465">1940</text>
+  </g>
+
+  <!-- price line -->
+  <polyline class="line" points="177.5,143 296.25,247.5 415,273.2 533.75,302.2 723.75,306.2 747.5,311.7 842.5,329.5 961.25,348.2 1080,369.6"/>
+  <g fill="#0f766e">
+    <circle cx="177.5" cy="143" r="7"/>
+    <circle cx="533.75" cy="302.2" r="7"/>
+    <circle cx="1080" cy="369.6" r="7"/>
+  </g>
+  <text class="val" x="190" y="138">16.2¢ (1902)</text>
+  <text class="val" x="545" y="298">7.5¢ (1917)</text>
+  <text class="val" x="975" y="372">3.8¢ (1940)</text>
+
+  <!-- real-terms callout -->
+  <rect x="640" y="150" width="420" height="74" rx="8" fill="#ecfdf5" stroke="#99f6e4"/>
+  <text class="label" x="658" y="178" fill="#0f766e" font-weight="700">In real (inflation-adjusted) terms:</text>
+  <text class="small" x="658" y="200">the relative price fell ~30% by 1917 and roughly</text>
+  <text class="small" x="658" y="218">halved by 1920 — WWI inflation, sticky utility rates.</text>
+
+  <!-- source -->
+  <rect x="130" y="496" width="950" height="42" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="small" x="150" y="523">Source: U.S. Census, Historical Statistics of the U.S., Series S 77 (nominal ¢/kWh). Real/relative claim: BLS CPI electricity vs all-items.</text>
+</svg>

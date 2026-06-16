@@ -1,76 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-  <title id="title">U.S. factory electrification diffusion, 1899 to 1929</title>
-  <desc id="desc">Line chart showing factory mechanical drive electrification rising from less than five percent in 1899 to more than fifty percent by 1919.</desc>
+  <title id="title">U.S. factory electrification diffusion, 1879 to 1929</title>
+  <desc id="desc">Line chart showing factory mechanical drive electrification near zero for two decades after the 1879-81 enabling invention, rising past fifty percent only around 1919, with the productivity payoff arriving in the 1920s. The lag from invention to payoff is roughly four decades.</desc>
   <defs>
+    <marker id="brk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M5 0L5 10" stroke="#b45309" stroke-width="2"/></marker>
     <style>
       .bg{fill:#f8fafc}
       .axis{stroke:#334155;stroke-width:2}
       .grid{stroke:#cbd5e1;stroke-width:1}
       .line{stroke:#0f766e;stroke-width:6;fill:none;stroke-linecap:round;stroke-linejoin:round}
-      .threshold{stroke:#b45309;stroke-width:3;stroke-dasharray:10 8}
+      .pre{stroke:#94a3b8;stroke-width:4;fill:none;stroke-dasharray:3 9;stroke-linecap:round}
+      .threshold{stroke:#0f766e;stroke-width:2.5;stroke-dasharray:10 8}
+      .invent{stroke:#b45309;stroke-width:2.5;stroke-dasharray:7 6}
       .title{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#0f172a}
       .label{font-family:Inter,Arial,sans-serif;font-size:17px;fill:#334155}
       .small{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#475569}
-      .big{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:700;fill:#0f172a}
-      .value{font-family:Inter,Arial,sans-serif;font-size:28px;font-weight:800;fill:#0f766e}
+      .value{font-family:Inter,Arial,sans-serif;font-size:26px;font-weight:800;fill:#0f766e}
+      .warn{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:700;fill:#b45309}
     </style>
   </defs>
   <rect class="bg" width="1200" height="560"/>
-  <text class="title" x="70" y="58">Factory electrification was still early in 1900</text>
-  <text class="small" x="70" y="86">Factory mechanical drive electrified, U.S. manufacturing</text>
+  <text class="title" x="70" y="42">Adoption was slow — and the payoff came decades later</text>
+  <text class="small" x="70" y="68">Factory mechanical drive electrified, U.S. manufacturing</text>
 
-  <line class="axis" x1="115" y1="430" x2="1080" y2="430"/>
-  <line class="axis" x1="115" y1="112" x2="115" y2="430"/>
+  <!-- payoff zone band (1920-1929) -->
+  <rect x="911" y="190" width="169" height="240" fill="#ecfdf5" stroke="#99f6e4"/>
+  <text class="small" x="921" y="210" fill="#0f766e" font-weight="700">1920s:</text>
+  <text class="small" x="921" y="228" fill="#0f766e" font-weight="700">payoff</text>
 
+  <!-- axes -->
+  <line class="axis" x1="140" y1="430" x2="1080" y2="430"/>
+  <line class="axis" x1="140" y1="190" x2="140" y2="430"/>
+
+  <!-- y grid -->
   <g>
-    <line class="grid" x1="115" y1="430" x2="1080" y2="430"/>
-    <line class="grid" x1="115" y1="350.5" x2="1080" y2="350.5"/>
-    <line class="grid" x1="115" y1="271" x2="1080" y2="271"/>
-    <line class="grid" x1="115" y1="191.5" x2="1080" y2="191.5"/>
-    <line class="grid" x1="115" y1="112" x2="1080" y2="112"/>
-    <text class="small" x="72" y="435">0%</text>
-    <text class="small" x="64" y="355">20%</text>
-    <text class="small" x="64" y="276">40%</text>
-    <text class="small" x="64" y="196">60%</text>
-    <text class="small" x="64" y="117">80%</text>
+    <line class="grid" x1="140" y1="430" x2="1080" y2="430"/>
+    <line class="grid" x1="140" y1="370" x2="1080" y2="370"/>
+    <line class="grid" x1="140" y1="310" x2="1080" y2="310"/>
+    <line class="grid" x1="140" y1="250" x2="1080" y2="250"/>
+    <line class="grid" x1="140" y1="190" x2="1080" y2="190"/>
+    <text class="small" x="97" y="435">0%</text>
+    <text class="small" x="89" y="375">20%</text>
+    <text class="small" x="89" y="315">40%</text>
+    <text class="small" x="89" y="255">60%</text>
+    <text class="small" x="89" y="195">80%</text>
   </g>
 
-  <line class="threshold" x1="115" y1="231.25" x2="1080" y2="231.25"/>
-  <text class="label" x="892" y="219">50% diffusion threshold</text>
+  <!-- 50% threshold -->
+  <line class="threshold" x1="140" y1="280" x2="1080" y2="280"/>
+  <text class="label" x="540" y="272" fill="#0f766e">50% diffusion only ~1919</text>
 
+  <!-- enabling invention marker (1880) -->
+  <line class="invent" x1="152" y1="190" x2="152" y2="430"/>
+  <circle cx="152" cy="427" r="6" fill="#b45309"/>
+  <text class="warn" x="162" y="360">1879–81</text>
+  <text class="small" x="162" y="380" fill="#b45309">incandescent lamp +</text>
+  <text class="small" x="162" y="398" fill="#b45309">first central station</text>
+
+  <!-- x ticks -->
   <g>
-    <text class="small" x="99" y="462">1899</text>
-    <text class="small" x="260" y="462">1904</text>
-    <text class="small" x="421" y="462">1909</text>
-    <text class="small" x="582" y="462">1914</text>
-    <text class="small" x="743" y="462">1919</text>
-    <text class="small" x="904" y="462">1924</text>
-    <text class="small" x="1064" y="462">1929</text>
+    <text class="small" x="126" y="455">1879</text>
+    <text class="small" x="310" y="455">1889</text>
+    <text class="small" x="498" y="455">1899</text>
+    <text class="small" x="686" y="455">1909</text>
+    <text class="small" x="874" y="455">1919</text>
+    <text class="small" x="1058" y="455">1929</text>
   </g>
 
-  <!-- y scale 0-80 pct: y = 430 - value*3.975 -->
-  <polyline class="line" points="115,410.9 276,384.3 437,331.8 598,280.5 759,218.9 920,163.3 1080,118.4"/>
+  <!-- ~zero for two decades after invention -->
+  <path class="pre" d="M152,427 L516,418"/>
 
+  <!-- diffusion line 1899-1929 -->
+  <polyline class="line" points="516,418 610,397 704,355 798,316 892,271 986,229 1080,196"/>
   <g fill="#0f766e">
-    <circle cx="115" cy="410.9" r="7"/>
-    <circle cx="276" cy="384.3" r="7"/>
-    <circle cx="437" cy="331.8" r="7"/>
-    <circle cx="598" cy="280.5" r="7"/>
-    <circle cx="759" cy="218.9" r="7"/>
-    <circle cx="920" cy="163.3" r="7"/>
-    <circle cx="1080" cy="118.4" r="7"/>
+    <circle cx="516" cy="418" r="7"/>
+    <circle cx="610" cy="397" r="7"/>
+    <circle cx="704" cy="355" r="7"/>
+    <circle cx="798" cy="316" r="7"/>
+    <circle cx="892" cy="271" r="7"/>
+    <circle cx="986" cy="229" r="7"/>
+    <circle cx="1080" cy="196" r="7"/>
   </g>
 
-  <rect x="145" y="308" width="235" height="86" rx="8" fill="#fff7ed" stroke="#fdba74"/>
-  <text class="value" x="162" y="342">&lt;5%</text>
-  <text class="small" x="162" y="366">of factory mechanical drive</text>
-  <text class="small" x="162" y="386">was electrified in 1899</text>
+  <!-- lag bracket: invention -> payoff -->
+  <line x1="152" y1="158" x2="965" y2="158" stroke="#b45309" stroke-width="2.5" marker-start="url(#brk)" marker-end="url(#brk)"/>
+  <text class="warn" x="300" y="150">lamp 1879 → factory payoff 1920s ≈ four decades — long &amp; variable, not a fixed clock</text>
 
-  <rect x="705" y="112" width="245" height="92" rx="8" fill="#ecfdf5" stroke="#99f6e4"/>
-  <text class="value" x="724" y="147">~50%</text>
-  <text class="small" x="724" y="171">diffusion around 1919</text>
-  <text class="small" x="724" y="191">before the 1920s payoff</text>
+  <!-- <5% callout -->
+  <rect x="360" y="332" width="232" height="74" rx="8" fill="#fff7ed" stroke="#fdba74"/>
+  <text class="value" x="376" y="366">&lt;5%</text>
+  <text class="small" x="376" y="390">of factory drive electrified, 1899</text>
+  <line x1="510" y1="370" x2="516" y2="418" stroke="#fdba74" stroke-width="2"/>
 
-  <rect x="115" y="492" width="970" height="42" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
-  <text class="small" x="135" y="519">Lighting was also early: in 1899, electric light reached about 3% of all U.S. residences and 8% of urban dwellings.</text>
+  <!-- bottom note -->
+  <rect x="140" y="492" width="940" height="42" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="small" x="160" y="519">Lighting was also early: in 1899, electric light reached about 3% of all U.S. residences and 8% of urban dwellings.</text>
 </svg>

@@ -1,52 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-  <title id="title">AI retrofit versus AI-native redesign</title>
-  <desc id="desc">A side-by-side schematic contrasting AI inserted into an old workflow with AI-native redesigned workflow.</desc>
+  <title id="title">AI retrofit versus AI-native redesign, drawn as group drive versus unit drive</title>
+  <desc id="desc">Left: an AI model bolted onto an unchanged workflow, drawn with an overhead shaft and belts like a group-drive factory; most AI work is here today. Right: the workflow redesigned around AI, drawn with a power panel and per-machine motors like a unit-drive factory.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-      <path d="M0 0L10 5L0 10z" fill="#334155"/>
-    </marker>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#0f766e"/></marker>
     <style>
       .bg{fill:#f8fafc}
-      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}
-      .title{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;fill:#0f172a}
-      .label{font-family:Inter,Arial,sans-serif;font-size:18px;fill:#334155}
-      .small{font-family:Inter,Arial,sans-serif;font-size:15px;fill:#475569}
-      .step{fill:#e2e8f0;stroke:#64748b;stroke-width:2}
-      .ai{fill:#ede9fe;stroke:#7c3aed;stroke-width:3}
-      .native{fill:#ccfbf1;stroke:#0f766e;stroke-width:3}
-      .line{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .panel{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .title{font-family:Inter,Arial,sans-serif;font-size:28px;font-weight:700;fill:#0f172a}
+      .label{font-family:Inter,Arial,sans-serif;font-size:17px;fill:#334155}
+      .small{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#475569}
+      .belt{stroke:#b45309;stroke-width:4;fill:none;stroke-linecap:round}
+      .wire{stroke:#0f766e;stroke-width:4;fill:none;stroke-linecap:round;marker-end:url(#arrow)}
+      .shaft{stroke:#475569;stroke-width:8;fill:none;stroke-linecap:round}
     </style>
   </defs>
   <rect class="bg" width="1200" height="560"/>
   <rect class="panel" x="35" y="45" width="535" height="470" rx="8"/>
   <rect class="panel" x="630" y="45" width="535" height="470" rx="8"/>
-  <text class="title" x="70" y="92">AI as group drive</text>
-  <text class="small" x="70" y="122">assistant bolted onto an old workflow</text>
-  <text class="title" x="665" y="92">AI as unit drive</text>
-  <text class="small" x="665" y="122">workflow redesigned around AI capabilities</text>
 
-  <!-- old workflow -->
-  <rect class="step" x="75" y="220" width="105" height="58" rx="8"/><text class="label" x="105" y="255">Plan</text>
-  <rect class="step" x="215" y="220" width="105" height="58" rx="8"/><text class="label" x="243" y="255">Draft</text>
-  <rect class="step" x="355" y="220" width="105" height="58" rx="8"/><text class="label" x="382" y="255">Review</text>
-  <path class="line" d="M180 249H214"/><path class="line" d="M320 249H354"/>
-  <rect class="ai" x="230" y="345" width="190" height="70" rx="12"/>
-  <text class="label" x="276" y="374">LLM helper</text>
-  <text class="small" x="263" y="399">optional overlay</text>
-  <path d="M325 345 C320 320 285 296 270 278" stroke="#7c3aed" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-  <text class="small" x="70" y="470">Useful locally, but old handoffs and review gates remain.</text>
+  <text class="title" x="65" y="90">AI as group drive</text>
+  <text class="small" x="65" y="116">a model bolted onto an unchanged workflow</text>
+  <text class="title" x="660" y="90">AI as unit drive</text>
+  <text class="small" x="660" y="116">workflow &amp; org redesigned around AI</text>
 
-  <!-- redesigned workflow -->
-  <rect class="native" x="675" y="165" width="140" height="58" rx="8"/><text class="label" x="704" y="200">Task split</text>
-  <rect class="native" x="880" y="165" width="140" height="58" rx="8"/><text class="label" x="912" y="200">Tools/API</text>
-  <rect class="native" x="675" y="300" width="140" height="58" rx="8"/><text class="label" x="718" y="335">Evals</text>
-  <rect class="native" x="880" y="300" width="140" height="58" rx="8"/><text class="label" x="902" y="335">Human gate</text>
-  <rect class="ai" x="790" y="235" width="120" height="65" rx="12"/>
-  <text class="label" x="823" y="263">AI</text>
-  <text class="small" x="807" y="286">worker loop</text>
-  <path class="line" d="M815 195 C845 195 850 225 850 235"/>
-  <path class="line" d="M910 195 C880 195 852 220 850 235"/>
-  <path class="line" d="M850 300 C835 324 815 329 815 329"/>
-  <path class="line" d="M910 329 C880 329 860 307 850 300"/>
-  <text class="small" x="665" y="470">The system changes: data flow, authority, evaluation, and responsibility.</text>
+  <!-- LEFT: overhead shaft = the old workflow, unchanged -->
+  <line class="shaft" x1="85" y1="180" x2="505" y2="180"/>
+  <circle cx="120" cy="180" r="16" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <circle cx="260" cy="180" r="16" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <circle cx="400" cy="180" r="16" fill="#e2e8f0" stroke="#475569" stroke-width="4"/>
+  <text class="small" x="180" y="163">old workflow — unchanged</text>
+
+  <!-- LEFT: LLM bolted on via belt -->
+  <rect x="83" y="318" width="120" height="62" rx="8" fill="#fed7aa" stroke="#b45309" stroke-width="3"/>
+  <text class="label" x="100" y="345">LLM bolted</text>
+  <text class="label" x="120" y="366">on</text>
+  <path class="belt" d="M183 326 C196 268 200 226 178 192"/>
+
+  <!-- LEFT: belts down to workflow steps -->
+  <path class="belt" d="M120 196 C116 246 114 280 118 322"/>
+  <path class="belt" d="M260 196 C257 248 255 282 258 322"/>
+  <path class="belt" d="M400 196 C397 248 395 282 398 322"/>
+
+  <!-- LEFT: workflow steps (machines) -->
+  <rect x="84" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="224" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="364" y="405" width="92" height="48" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text class="small" x="105" y="434">Plan</text>
+  <text class="small" x="243" y="434">Draft</text>
+  <text class="small" x="388" y="434">Ship</text>
+
+  <!-- LEFT: "we are here" badge -->
+  <rect x="250" y="318" width="300" height="34" rx="17" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+  <text class="label" x="266" y="341" fill="#b45309" font-weight="700">← most AI work is here today</text>
+
+  <text class="small" x="65" y="488">Type less; handoffs, review gates, org chart unchanged. Numbers barely move.</text>
+
+  <!-- RIGHT: power panel = shared platform -->
+  <rect x="682" y="170" width="100" height="150" rx="8" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+  <text class="label" x="700" y="212">shared</text>
+  <text class="label" x="698" y="234">platform</text>
+  <text class="small" x="697" y="262">tools · evals</text>
+  <text class="small" x="703" y="280">· memory</text>
+
+  <!-- RIGHT: machines with local AI motors (agents) -->
+  <g>
+    <rect x="840" y="158" width="118" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="948" cy="187" r="17" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+    <text class="small" x="855" y="183">Task split</text>
+    <text class="small" x="855" y="201">+ agent</text>
+  </g>
+  <g>
+    <rect x="1000" y="158" width="118" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="1108" cy="187" r="17" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+    <text class="small" x="1015" y="183">Agent owns</text>
+    <text class="small" x="1015" y="201">a slice</text>
+  </g>
+  <g>
+    <rect x="840" y="318" width="118" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="948" cy="347" r="17" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+    <text class="small" x="855" y="343">Evals =</text>
+    <text class="small" x="855" y="361">source of truth</text>
+  </g>
+  <g>
+    <rect x="1000" y="318" width="118" height="58" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="1108" cy="347" r="17" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+    <text class="small" x="1015" y="343">Human gate</text>
+    <text class="small" x="1015" y="361">(new role)</text>
+  </g>
+
+  <!-- RIGHT: wires (power by wire, not by shaft) -->
+  <path class="wire" d="M782 200 C815 188 820 187 838 187"/>
+  <path class="wire" d="M782 215 C870 215 920 188 998 187"/>
+  <path class="wire" d="M782 268 C820 300 830 347 838 347"/>
+  <path class="wire" d="M782 285 C880 320 920 347 998 347"/>
+
+  <!-- RIGHT: David's caution -->
+  <text x="980" y="262" font-family="Inter,Arial,sans-serif" font-size="56px" font-weight="800" fill="#e2e8f0">?</text>
+  <text class="small" x="660" y="466" fill="#7c3aed">From inside the transition, early redesign can look like nothing yet.</text>
+  <text class="small" x="660" y="488">Data flow, authority, evaluation, and responsibility all change.</text>
 </svg>

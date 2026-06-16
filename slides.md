@@ -113,7 +113,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
-  margin-top: 14px;
+  margin-top: 8px;
 }
 .photo-panel {
   overflow: hidden;
@@ -124,7 +124,7 @@ ul {
 .photo-panel img {
   display: block;
   width: 100%;
-  height: 272px;
+  height: 212px;
   object-fit: cover;
   filter: grayscale(100%) contrast(1.05);
 }
@@ -142,7 +142,7 @@ ul {
 }
 .edp-photo {
   width: 100%;
-  height: 292px;
+  height: 232px;
   object-fit: cover;
   filter: grayscale(100%) contrast(1.05);
   border-radius: 8px;
@@ -197,55 +197,60 @@ Why new technologies often pay off late
 "We see the computers everywhere but in the productivity statistics."
 </div>
 
+<div class="mt-4 text-xl text-slate-400">電腦到處都看得到,就是在生產力的統計數字裡看不到。</div>
+
 <div class="mt-5 text-xl text-slate-500">Robert Solow, quoted in Paul A. David (1990)</div>
 
 <div class="source">Draft v3 | English slides | Paul A. David, "The Dynamo and the Computer"</div>
 
 <!--
-Today I want to share a short 1990 essay by Paul David, "The Dynamo and the Computer."
+(Open cold. Say the quote first, before any throat-clearing.)
 
-The main story is not AI. It is a historical puzzle about computers, and David's way of using electrification to understand that puzzle.
+"We see the computers everywhere but in the productivity statistics."
 
-The entry point is Robert Solow's famous line: "We see the computers everywhere but in the productivity statistics."
+中文大意:電腦到處都看得到,就是在生產力的統計數字裡看不到。經濟學家 Robert Solow 在 1980 年代末講的。投資很重、大家天天用、人人都覺得它重要,但攤開總體生產力的數字,卻幾乎沒有動。
 
-That is the productivity paradox: a technology is visible, organizations invest in it, people feel it matters, but aggregate productivity numbers do not clearly move.
+(Beat.) He said that about computers, almost forty years ago. The same sentence is being said about AI today — "we see LLMs everywhere but not in the productivity statistics." A short 1990 economics paper tells us whether that should worry us.
 
-Near the end, I will briefly mention why this story feels relevant to AI. But the foundation is the older productivity paradox: computers were visible, yet productivity statistics looked disappointing.
+The paper is Paul David's "The Dynamo and the Computer." The main story is not AI. It is a historical puzzle about computers, and David's way of using electrification to understand it.
+
+That gap — visible everywhere, invisible in the numbers — is the productivity paradox. Near the end I will come back to AI; the foundation is the older paradox: computers were everywhere, yet the productivity statistics looked disappointing.
 -->
 
 ---
 
 <div class="kicker">Definition</div>
 
-# Visible adoption, unclear productivity payoff
+# Visible adoption, unclear payoff
 
-<div class="threecol mt-8">
-  <div class="box">
-    <div class="text-2xl font-bold">Tools show up</div>
-    <div class="mt-3 small">People buy, try, and talk about the new technology.</div>
-  </div>
-  <div class="box">
-    <div class="text-2xl font-bold">Numbers lag</div>
-    <div class="mt-3 small">Aggregate productivity does not immediately jump.</div>
-  </div>
-  <div class="box">
-    <div class="text-2xl font-bold">Meaning stays open</div>
-    <div class="mt-3 small">Too weak, too early, badly measured, or not yet redesigned around?</div>
-  </div>
+<div class="mt-14 claim text-3xl text-center">
+Real value — <span class="text-teal-700">not yet</span> real productivity.
 </div>
 
-<div class="mt-8 claim">
-The paradox is not "no value." It is value that has not yet become system-level productivity.
+<div class="threecol mt-14 text-center">
+  <div class="soft">
+    <div class="text-2xl font-bold">Tools show up</div>
+  </div>
+  <div class="soft">
+    <div class="text-2xl font-bold">Numbers lag</div>
+  </div>
+  <div class="soft">
+    <div class="text-2xl font-bold">Why? — unclear</div>
+  </div>
 </div>
 
 <div class="source">Keep TFP/MFP for Q&A. In the talk, say "productivity numbers."</div>
 
 <!--
-I would avoid starting with the TFP formula. For this audience, the intuitive version is enough.
+Skip the TFP formula. For this room, an example is enough.
 
-Imagine a company buys many tools, everyone uses them, and yet overall throughput, cost, or delivery speed does not obviously improve. That is the paradox.
+Concrete version first: your team adopts Copilot. Everyone uses it every day. Nobody can point to the sprint that actually got faster. That gap is the paradox.
 
-The important point is that the paradox does not mean "the tool has no value." It means the value is not yet visible as system-level productivity.
+(Optional show of hands.) Who here would say AI has measurably sped up your team's delivery? Now — who uses it every day? The gap between those two shows of hands is basically the whole talk.
+
+The important point: the paradox does not mean "the tool has no value." It means the value is not yet visible as system-level productivity.
+
+Two separate reasons the numbers lag, and David leans on both: (1) real — the work has not been redesigned around the tool yet; (2) measurement — the official statistics are partly blind, missing quality gains and whole new categories of output, so real gains show up late and understated. Keep the measurement point; it returns on the payoff slide.
 -->
 
 ---
@@ -263,13 +268,15 @@ The important point is that the paradox does not mean "the tool has no value." I
   <div class="soft">
     <div class="text-5xl font-bold text-blue-700">1990</div>
     <div class="mt-3 text-2xl font-bold">Computer Age</div>
-    <div class="mt-3 small">Microprocessors and EDP systems were spreading, but the productivity statistics still looked disappointing.</div>
+    <div class="mt-3 small">Microprocessors and early business computers were spreading, but the productivity statistics still looked disappointing.</div>
   </div>
 </div>
 
 <div class="mt-7 subclaim font-bold">
-His question: why do general-purpose technologies often pay off late?
+His question: why do general-purpose technologies (electricity, computers… maybe AI) often pay off late?
 </div>
+
+<div class="mt-3 small muted">The lag is long and variable — and not guaranteed: lamp 1879 → factory payoff 1920s (~40 yrs); microchip 1970 → computer payoff late 1990s. It arrives only if the conditions align.</div>
 
 <div class="source">David 1990, p.355-356.</div>
 
@@ -278,9 +285,9 @@ David's move is not "computers are literally dynamos."
 
 He uses electrification as a historical mirror. Around 1900, the electrical age was visible. Around 1990, the computer age was visible. In both cases, the visible technology was ahead of the measured productivity payoff.
 
-If someone asks why these two moments are being compared: both dates are roughly two decades after major enabling breakthroughs became visible. Edison and Swan's incandescent lamp and early central stations appear around 1879-1881; Intel's memory chip and microprocessor appear around 1969-1970.
+If someone asks why these two moments are being compared: each is a long interval after the enabling breakthrough — but the interval varies and is NOT a fixed clock. Edison and Swan's incandescent lamp and early central stations appear around 1879-1881, yet the factory payoff waits until the 1920s (David: roughly four decades after the first central station). Intel's memory chip and microprocessor appear around 1969-1970; the computer payoff shows up in the late 1990s. Resist any "neat twenty-year rule" — the point is contingency, not a constant.
 
-Also, be precise orally if asked: in David's title, "dynamo" is a symbol for the broader electrification regime. The factory mechanism we discuss is mainly about electric motors and factory redesign.
+Vocabulary: "general-purpose technology" = a technology that spreads across the whole economy (electricity, the computer, maybe AI); that breadth is why the payoff is slow. And in David's title, "dynamo" = the electric generator, his shorthand for the whole electrification regime.
 -->
 
 ---
@@ -296,15 +303,13 @@ Also, be precise orally if asked: in David's title, "dynamo" is a symbol for the
 <div class="source">David 1990 p.356; David 1989 Table 3. Lighting note: 3% of all U.S. residences, 8% of urban dwellings in 1899.</div>
 
 <!--
-This is the grounding data.
+Lead with the punch number: eighteen years after the lightbulb, in 1899, only about 3% of U.S. residences had electric light — 8% even in urban dwellings — and electric motors were less than 5% of factory mechanical drive.
 
-Electric lighting and central stations existed by the early 1880s. But in 1899, only about 3% of U.S. residences had electric lighting, and electric motors were less than 5% of factory mechanical drive.
+The chart is one line: factory mechanical drive electrified. David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
 
-I simplified the chart to one line: factory mechanical drive electrified. The original table also has a "secondary electric motor" series, but that is too technical for the main talk. In David/Duboff's usage, primary electric motors used purchased electricity from utilities; secondary electric motors used electricity generated inside the plant. Treat secondary motor penetration as a proxy for deeper factory electrification and unit-drive diffusion, not as a literal motor type.
+(Beat, then the lesson — the spine of the talk.) Invention is not diffusion. Diffusion is not redesign. And redesign — rebuilding how the work is done around the tool — is what eventually moves productivity. Hold that word; the next slide is all about it.
 
-David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
-
-So the first lesson is simple: invention is not diffusion. Diffusion is not redesign. Redesign is what eventually matters for productivity.
+(Appendix / only if asked.) The original table also has a "secondary electric motor" series. In David/DuBoff's usage, primary motors ran on purchased electricity from utilities; secondary motors ran on electricity generated inside the plant. Treat secondary-motor penetration as a proxy for deeper factory electrification and unit-drive diffusion, not as a literal motor type. Q&A material — do not spend main-talk time on it.
 -->
 
 ---
@@ -326,22 +331,28 @@ So the first lesson is simple: invention is not diffusion. Diffusion is not rede
   </div>
 </div>
 
-<div class="source">David 1990 p.357-358; Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
+<div class="mt-3 subclaim font-bold">
+In software: group drive = lift-and-shift; unit drive = re-architecting around the new primitive.
+</div>
+
+<div class="mt-2 small muted">Unit drive existed by the 1910s — yet the payoff waited for the 1920s. Why then? →</div>
+
+<div class="source">David 1990 p.357-358 (mechanism), p.359 (TFP decomposition); Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
 
 <!--
-This is the most important slide.
+This is the most important slide. If they remember one idea, this is it.
 
-In old factories, a central prime mover powered long overhead shafts. Belts carried mechanical power down to machines.
+In old factories, a central prime mover powered long overhead shafts; belts carried power down to machines. Early electrification often kept that architecture — a motor was added to drive sections of the old shafting. That is group drive: new power source, old factory geometry.
 
-Early electrification often kept that architecture. A motor was added to drive sections of the old shafting system. This was group drive: new power source, old factory geometry.
+Unit drive changed the architecture: each machine got its own motor, power arrived by wire, and the whole building could be redesigned — single-story layouts, flexible placement, easier maintenance, safer cleaner floors.
 
-Unit drive changed the architecture. Each machine could have its own motor. Power moved by wire, then became mechanical motion at the point of use.
+For engineers, this is the same distinction we live with. Group drive is lift-and-shift: monolith to the cloud, new infrastructure, identical architecture. Unit drive is re-architecting around the new primitive. Bolting a motor onto the old shaft is the same move as bolting a chatbot onto an unchanged workflow — and neither moves the numbers much.
 
-That made single-story layouts, flexible machine placement, easier maintenance, and safer cleaner factories possible.
+The photo on the right is a Marconi screw-machine department whose archival caption explicitly notes individual driving motors. Caveat: it is from 1917-18, so use it as a concrete visual of unit drive beginning to appear, not as the entire 1920s diffusion story.
 
-The photo on the right is a Marconi screw-machine department photo whose archival caption explicitly notes individual driving motors. Caveat: it is from 1917-18, so use it as a concrete visual of unit-drive machinery beginning to appear, not as the entire 1920s diffusion story.
+(Appendix / only if asked.) David's 1920s story is not only unit drive. Secondary motor capacity statistically explains about half of the 1919-1929 manufacturing TFP acceleration (p.359); continuous-process production, shift-work, electrical instrumentation, and process heat also matter. Keep for Q&A — it muddies the cleanest idea in the talk.
 
-One caveat: David's 1920s manufacturing productivity story is not only unit drive. Secondary motor capacity statistically explains about half of the 1919-1929 manufacturing TFP acceleration; continuous process production, shift-work, electrical instrumentation, and process heat also matter.
+(Bridge into the next slide.) Notice the timing puzzle: unit drive existed already in the 1900s-1910s — the Marconi photo is 1917 — yet the productivity payoff did not really land until the 1920s. The technology was available before the payoff arrived. So why the 1920s? That is the next slide.
 -->
 
 ---
@@ -370,94 +381,105 @@ One caveat: David's 1920s manufacturing productivity story is not only unit driv
 </div>
 
 <div class="mt-6 subclaim font-bold">
-This is "historically contingent": not automatic, not pure luck.
+This is "historically contingent": the conditions had to line up — and they might not have.
 </div>
 
 <div class="source">David 1990 p.356-358.</div>
 
 <!--
-Why did the payoff become visible in the 1920s?
+Why did the payoff become visible in the 1920s? Several conditions lined up — and each has a software parallel, so this is a Monday checklist.
 
-Not for one reason. Several conditions lined up.
+Cheaper, reliable power → the tool got cheap and trustworthy enough to build on (our GPT-4-class moment). Capital replacement moments → we redesign during a rewrite or migration, not mid-flight. Design know-how → someone has to actually learn the new architecture; it is a skill, not a switch. Investment climate → leadership has to fund the redesign.
 
-Electricity became cheaper and more reliable. Old factories reached replacement moments. Engineers and factory architects learned how to design around unit drive. And the 1920s investment boom created opportunities to build new plants.
-
-This is what "historically contingent" means in plain English: the technology did not automatically produce productivity. It needed prices, capital replacement, skills, and macro conditions to align.
+This is what "historically contingent" means in plain English: the technology did not automatically produce productivity — it needed prices, capital-replacement moments, skills, and macro conditions to align, and they might not have. There was no guarantee; a different macro climate could have deferred the payoff for years (and remember what followed the 1920s). David's argument explicitly allows that the gains arrive much later than hoped, or not on the expected schedule at all. So this is not "be patient, it always pays off" — it is "it pays off only if the conditions align."
 -->
 
 ---
 
-<div class="kicker">Computer Bridge</div>
+<div class="kicker">One industry, three waves</div>
 
-# EDP had its own "group drive" phase
+# Same bank, three waves of tech — very different effects on jobs
 
-<div class="twocol mt-6">
-  <div>
-    <img src="/assets/ibm-704-edp.jpg" class="edp-photo" style="object-position:50% 48%;" />
-    <div class="mt-2 tiny muted">IBM 704 electronic data processing machine, NASA Langley, 1957.</div>
+<div class="grid grid-cols-3 gap-4 mt-7">
+  <div class="metric" style="border-left-color:#64748b;">
+    <div class="number" style="color:#64748b;font-size:22px;">1960s–70s</div>
+    <div class="mt-2 text-2xl font-bold">Back office goes digital</div>
+    <div class="mt-2 small">Records computerized; bookkeeping speeds up. You still visit the branch; the teller still serves you. <b>Tellers ≈ unchanged.</b></div>
   </div>
-  <div>
-    <div class="claim">Computerizing paper work is not the same as becoming digital-native.</div>
-    <div class="mt-5 box">
-      <div class="text-2xl leading-tight">
-        paper forms<br/>
-        + batch processing<br/>
-        + manual checks<br/>
-        + old departments
-      </div>
-    </div>
+  <div class="metric">
+    <div class="number" style="font-size:22px;">1970s–2000s</div>
+    <div class="mt-2 text-2xl font-bold">ATM extends the branch</div>
+    <div class="mt-2 small">Tellers per branch fall (~20→13), but cheaper branches let banks open <b>~40% more</b>. Total tellers <b>rise</b> (~300k → ~600k).</div>
+  </div>
+  <div class="metric" style="border-left-color:#0f766e;">
+    <div class="number" style="color:#0f766e;font-size:22px;">2010s–</div>
+    <div class="mt-2 text-2xl font-bold">Mobile moves the bank home</div>
+    <div class="mt-2 small">Travel distance ≈ 0; branches become unnecessary → closures (peak 2009). Tellers <b>fall</b> (~600k → mid-300k).</div>
   </div>
 </div>
 
-<div class="source">David 1990 p.357, p.360; Baily & Gordon 1988. Photo: NASA / Wikimedia Commons.</div>
+<div class="mt-5 subclaim font-bold">A new tool made the old model cheaper without cutting jobs. Headcount moved only when the model itself changed.</div>
+
+<div class="mt-2 small muted">Why only the 2010s? The pieces had to line up — smartphone + app store (2007–08), 4G (2010), and a 2004 law (Check 21) that legalized depositing a check by photo. The payoff was historically contingent — just like the dynamo.</div>
+
+<div class="source">Bessen, IMF F&amp;D 2015 (urban branches +~40% &amp; tellers 20→13, 1988–2004; ~400k ATMs); FDIC (branch peak 2009); BLS OEWS (teller counts, rounded). Post-2009 decline also reflects 2008-crisis mergers and falling cash use.</div>
 
 <!--
-Now bridge back to computers.
+David's real target was not the factory — it was the computer productivity paradox. The cleanest place to watch it is one industry we all use: banking.
 
-David's real target was the computer productivity paradox. EDP means electronic data processing: enterprise systems for payroll, accounting, inventory, reports, and records.
+Wave one, 1960s–70s: banks computerize the back office. Records go digital, bookkeeping speeds up — but you still drive to the branch and a teller still serves you. The computer made the old way faster; it did not change who does the work. Teller numbers barely move.
 
-This is not today's smartphone-cloud-SaaS world. It was centralized, expensive, back-office computing.
+Wave two, the ATM (1970s on): a cash machine extends the bank's reach. It cut tellers needed per branch — about 20 to 13 between 1988 and 2004 (Bessen). But the twist economists love: because the ATM made each branch cheaper, and convenience then meant being physically close, banks opened ~40% more branches. Fewer tellers per branch × many more branches = total tellers ROSE, ~300k (1970) to ~600k (2010). The machine expected to kill the teller grew the teller.
 
-Many organizations did not become digital-native immediately. They layered computers onto paper workflows, with manual checking and old departmental boundaries still intact.
+Wave three, mobile banking (2010s): the bank moves into your phone — travel distance drops to ~zero. Now the branch is a cost, not a weapon. Banks close branches (US count peaked 2009) and tellers finally fall — into the mid-300-thousands by the early 2020s. Be fair: post-2008 mergers and falling cash use pushed the same way, not mobile alone.
 
-The computer analogy only starts to look like unit drive when the workflow itself becomes computational: databases as the source of truth, ERP and supply-chain systems, real-time inventory, CAD/CAM, networked ordering, electronic payments, search, routing, and self-service. Then the gain is not "a faster filing cabinet." It is less waiting, less re-keying, fewer errors, tighter inventories, better capacity use, faster design cycles, and new operating models.
+Punchline — the whole talk in one line: for ~40 years the technology made banking cheaper WITHOUT cutting the workforce. The jobs moved only when the model itself changed. A new tool makes the old model efficient; only a new model changes the work.
 
-So EDP could also be a kind of group drive: new technology bolted onto old processes.
+Why did mobile land only in the 2010s, when "phone banking" existed in the late 1990s? The complements had to line up: smartphone + app store (2007–08), fast mobile internet (4G, 2010), and the underrated one — a 2004 law, Check 21, that made depositing a check by photo legal at all. The idea was old; the payoff was historically contingent, exactly like the dynamo waiting for the 1920s.
+
+(Bridge to AI:) So hold that question for AI: are we adding a new tool to the old model, or building a new model?
 -->
 
 ---
 
 <div class="kicker">35 Years On</div>
 
-# The computer payoff arrived, then faded
+# The computer payoff came late — then faded
 
-<div class="twocol mt-8">
+<div class="grid grid-cols-3 gap-4 mt-8">
+  <div class="metric" style="border-left-color:#64748b;">
+    <div class="number" style="color:#64748b;font-size:23px;">~1990–95</div>
+    <div class="mt-2 text-2xl font-bold">Everywhere, not in the numbers</div>
+    <div class="mt-2 small">Computer stock grew <b>~17%/yr</b>, investment <b>4×</b> after 1995 — yet only <b>+¼ pt/yr</b> to growth.</div>
+  </div>
   <div class="metric">
-    <div class="number">1995-2004</div>
-    <div class="mt-3 text-2xl font-bold">IT became visible in productivity</div>
-    <div class="mt-3 small">U.S. labor productivity accelerated; growth accountants found a large IT contribution.</div>
+    <div class="number" style="font-size:23px;">1996–2004</div>
+    <div class="mt-2 text-2xl font-bold">It landed</div>
+    <div class="mt-2 small">Labor productivity <b>~1.6% → ~2.7%/yr</b>. IT ≈ <b>half</b> the step-up; <b>~⅔</b> with computer production.</div>
   </div>
   <div class="metric" style="border-left-color:#64748b;">
-    <div class="number" style="color:#64748b;">2005-2019</div>
-    <div class="mt-3 text-2xl font-bold">The boom did not simply continue</div>
-    <div class="mt-3 small">Productivity growth slowed again despite internet, smartphones, and cloud.</div>
+    <div class="number" style="color:#64748b;font-size:23px;">2005–2019</div>
+    <div class="mt-2 text-2xl font-bold">Faded — the redesign stalled, not the tech</div>
+    <div class="mt-2 small">Growth slowed despite internet, smartphones, and cloud. Payoff is contingent, not permanent.</div>
   </div>
 </div>
 
-<div class="mt-8 claim">
-So the lesson is patience, but not faith.
+<div class="mt-7 claim">
+Same shape as the dynamo: huge adoption first, payoff much later. Patience, but not faith.
 </div>
 
-<div class="source">Oliner & Sichel 2000; Jorgenson, Ho & Stiroh 2008; Syverson 2017; BLS.</div>
+<div class="source">Oliner & Sichel 2000 (Table 2; pp.11–12); Jorgenson, Ho & Stiroh 2008; Syverson 2017; BLS.</div>
 
 <!--
-Claude's article adds a useful "35 years on" layer.
+This is the "35 years on" layer David could not see — and the numbers line up with his framework, rather than vindicating a forecast he never made.
 
-David's delayed-payoff story did get support from the later IT boom. Around 1995-2004, U.S. nonfarm business labor productivity accelerated, and work by Oliner and Sichel attributed much of the late-1990s speed-up to IT capital deepening and productivity in computer production.
+The lag, in hard data: through the early 1990s, computer-hardware stock grew ~17%/yr and investment more than quadrupled after 1995, yet computers added only ~¼ point/yr to growth (still a tiny share of the capital stock). Adoption everywhere, payoff missing — David's electrification curve repeated.
 
-But that is not the end of the story. After the mid-2000s, productivity growth slowed again. The usual careful wording is 2005-2019, because the post-pandemic period is volatile and still being interpreted. There is a post-2022 pickup in some data, but attribution to AI is still young and contested.
+Then it landed: Oliner & Sichel find nonfarm-business labor productivity accelerated from ~1.6%/yr (first half of the 1990s) to ~2.7%/yr (second half). IT capital deepening ≈ half the step-up; computer hardware's own contribution rose from ~¼ to ~0.6 point/yr; IT plus computer production ≈ two-thirds of the acceleration.
 
-This is why I do not want to say "AI will just be like electricity." The right lesson is patience, but not faith.
+But it did not simply continue. From 2005 to 2019 growth slowed again despite internet, smartphones, and cloud. Frame the fade carefully: it was the redesign stalling, not the technology being exhausted — the complementary reorganization ran its course, not the silicon. (Post-2022 pickup in some series; attribution to AI is too young to call.)
+
+The lesson is two words: patience, but not faith. The payoff can be delayed, partial, or temporary — and contingent, not permanent. Not a guarantee that arrives if you just wait.
 -->
 
 ---
@@ -466,26 +488,39 @@ This is why I do not want to say "AI will just be like electricity." The right l
 
 # AI may still be in its group-drive phase
 
-<div class="mt-4">
-  <img src="/assets/ai-retrofit-vs-redesign.svg" class="diagram" />
+<div class="twocol mt-5">
+  <div class="box" style="background:#fff7ed;border-color:#fdba74;">
+    <div class="text-2xl font-bold" style="color:#b45309;">Group drive — bolted on</div>
+    <div class="mt-3 small">Copilot in the same IDE &amp; PR ritual · a RAG bot over a knowledge base nobody reorganized · a support bot <i>beside</i> agents → <b>+14%</b> resolved/hr, real &amp; measured (Brynjolfsson et al. 2023).</div>
+    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. Org chart &amp; "definition of done" unchanged.</div>
+  </div>
+  <div class="box" style="background:#ecfdf5;border-color:#5eead4;">
+    <div class="text-2xl font-bold" style="color:#0f766e;">Unit drive — redesigned</div>
+    <div class="mt-3 small">An agent owns an end-to-end slice · evals/tests become the source of truth · review gates &amp; accountability rebuilt · the whole queue rebuilt around the agent (Klarna 2024).</div>
+    <div class="mt-3 small" style="color:#0f766e;font-weight:700;">Org chart &amp; "done" change — this is what moves the numbers.</div>
+  </div>
 </div>
 
-<div class="source">Analogy as lens, not prophecy. David 1990 p.360: "Computers are not dynamos."</div>
+<div class="mt-4 claim">Test: if your AI rollout didn't change your org chart or your definition of done — you built group drive.</div>
+
+<div class="mt-2 small muted"><i>And from inside, you can't yet tell which you built: Klarna rebuilt its queue around AI in 2024 — then re-hired humans in 2025.</i></div>
+
+<div class="source">Brynjolfsson, Li &amp; Raymond 2023 (NBER w31161); Klarna 2024–25 (company/press). Lens, not prophecy — David 1990 p.360: "Computers are not dynamos."</div>
 
 <!--
-Now apply the lens to AI.
+Now apply the lens to AI. Put a sharp claim on the table — as a provocation, not a verdict, because we are standing inside the transition and cannot yet measure it.
 
-If someone says, "We see LLMs everywhere, but not in the productivity statistics," that statement is plausible as a framing. But it is not a conclusion.
+The claim, stated sharply so you can argue with it: most of what we have built with LLMs so far looks like group drive. A chatbot bolted onto an old workflow. Copilot autocompleting inside the same IDE, same review process, same PR ritual — you type less, but the workflow is unchanged. A RAG bot in front of a knowledge base nobody reorganized. New power source, old factory geometry.
 
-It does not prove AI has failed. It also does not prove AI will succeed.
+But honor David's caution: from inside a transition you genuinely cannot tell early redesign from retrofit — the 1917 unit-drive photo looked like nothing in the aggregate at the time. So "most AI is group drive" is a question to hold against your own work, not a confident diagnosis. It does not prove AI has failed, and it does not prove it will succeed. The evidence today is strongest at the task or firm level — real, measured gains in specific writing and customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable, economy-wide productivity regime change.
 
-Many early AI deployments look like group drive: a chatbot next to an old workflow, Copilot inside an old IDE, summarization inside an old document process.
+So: what is AI's unit-drive moment? Concrete candidates to argue about — (1) an agent owns an end-to-end slice of work, not a sub-step a human stitches together; (2) evals and tests become the source of truth, the way the database did in the computer's unit-drive era; (3) review gates, accountability, and responsibility boundaries get redesigned — who is on the hook when the agent ships? That is an org-chart change, not a tooling change; (4) pipelines designed assuming a probabilistic component (retries, verification, fallback), not a deterministic one bolted in.
 
-The bigger question is: what is AI's unit-drive moment? What does it mean to redesign task decomposition, tool access, evals, review gates, responsibility boundaries, and data flow around AI?
+One concrete shape of unit drive: a support org that does not just drop a bot beside its agents, but rebuilds the whole tier-one queue around an AI agent — defined escalation paths, a measured deflection rate, humans re-scoped to handle only what the agent hands up. That is a workflow-and-org redesign, not a tool bolted on. Most "we added an AI assistant" projects are not that.
 
-The evidence is strongest at the task or firm level: for example, some studies find real productivity gains in specific writing or customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable economy-wide productivity regime change.
+The structural warning — David's own sharpest point. Factories got redesigned partly because the old ones physically wore out and had to be replaced; that replacement moment forced the redesign. Information systems and workflows do not wear out. A 2009 process can run untouched for fifteen years. Nothing forces the AI rewrite — so AI's unit-drive moment may be structurally slower than electricity's, because decay will not do the work for us.
 
-Also mention the caveat if useful: information systems do not physically wear out like factories. Old workflows can persist for a long time unless we intentionally redesign them.
+(Optional interaction.) Ask the room: name one thing your team does differently because of AI — not faster, differently. The silence, or the rare good answer, is the most persuasive evidence in this whole talk.
 -->
 
 ---
@@ -509,7 +544,11 @@ Also mention the caveat if useful: information systems do not physically wear ou
   </div>
 </div>
 
-<div class="quote mt-9">
+<div class="mt-8 subclaim font-bold">
+Factories got redesigned because the old ones fell apart. Your codebase won't — nothing forces the AI rewrite except you.
+</div>
+
+<div class="quote mt-7">
 Are we bolting new tools onto old shafts,<br/>
 or redesigning the factory?
 </div>
@@ -517,15 +556,13 @@ or redesigning the factory?
 <div class="source">Closing thesis: analogy as a thinking tool, not a forecast.</div>
 
 <!--
-The conservative close is important.
+The close is conservative, but it should still have teeth.
 
-David is not saying: wait long enough and every new technology will save us.
+David is not saying "wait long enough and every new technology will save us." He is saying: do not judge a general-purpose technology too quickly from early productivity numbers. The electricity story was never about the generator alone — it was about redesigning factories. The computer story was never about buying computers — it was about becoming digital-native.
 
-He is saying: do not judge a general-purpose technology too quickly from early productivity numbers.
+So for AI the question is not only "is the technology good enough?" It is "can we redesign work around it?" — and then the sharper version: factories got redesigned because the old ones fell apart; your codebase won't. Nothing will force the AI rewrite except you, so the only question that matters is whether you will do it on purpose.
 
-The electricity story was not really about the generator alone. It was about redesigning factories. The computer story was not just about buying computers. It was about becoming digital-native.
-
-So for AI, or any new general-purpose tool, the question is not only "is the technology good enough?" The question is: can we redesign work around it?
+(Land the line, then stop.) Are we bolting new tools onto old shafts, or redesigning the factory?
 -->
 
 ---
@@ -534,4 +571,108 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: TFP 101 | Solow | electrification timeline | EDP vs PC/cloud | "Computers are not dynamos"</div>
+<div class="mt-8 text-2xl">Appendix candidates: TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | EDP vs PC/cloud | "Computers are not dynamos" (p.360) | Why info systems never wear out — so the rewrite is never forced</div>
+
+---
+
+<div class="kicker">Appendix · Origins & dating</div>
+
+# Why 1879 — and why David pairs "1900" with "1990"
+
+<div class="twocol mt-6">
+  <div class="soft">
+    <div class="text-2xl font-bold">1879 → 1882: device → system</div>
+    <div class="mt-3 small">1879: Edison's (and Swan's) practical incandescent lamp — a better <b>device</b>. 1882: Pearl Street Station, NYC — the first commercial <b>central station</b>: generation + distribution + metering + tariffs as one system. Electricity became <b>infrastructure</b>, not a product — the generality that makes it a general-purpose technology, and why the payoff came a generation later.</div>
+  </div>
+  <div class="soft">
+    <div class="text-2xl font-bold">Why 1900 ≈ 1990</div>
+    <div class="mt-3 small">David writes in 1990 — about two decades after the 1969–71 chip. So he stands at the matching electrical vantage: ~1900, about two decades after the 1880s dynamo. Both are <b>"we see it everywhere but not in the statistics"</b> diagnosis moments — <b>not</b> the payoff dates. The electrical payoff itself came later, in the 1920s.</div>
+  </div>
+</div>
+
+<div class="mt-5 subclaim font-bold">1900 and 1990 are paired vantage points, not paired payoffs.</div>
+
+<div class="source">David 1990 p.355-356. Pearl Street: IEEE ETHW. The ~two-decade vantage is rhetorical symmetry, not a fixed lag.</div>
+
+---
+
+<div class="kicker">Appendix · Data</div>
+
+# Backup: electricity prices fell after 1914–17
+
+<div class="mt-4">
+  <img src="/assets/electricity-price-fall.svg" class="diagram" />
+</div>
+
+<div class="source">U.S. Census, Historical Statistics of the U.S., Series S 77 (nominal ¢/kWh); BLS CPI electricity vs all-items for the real/relative claim.</div>
+
+---
+
+<div class="kicker">Appendix · The lag, three times</div>
+
+# Backup: diffusion vs payoff, three technologies
+
+<div class="mt-4">
+  <img src="/assets/diffusion-three-techs.svg" class="diagram" />
+</div>
+
+<div class="source">Electrification: David 1990; household figures (Smithsonian/ACEEE). Computers: Census CPS/ACS; Oliner &amp; Sichel 2000. AI: Bick-Blandin-Deming (NBER w32966); St. Louis Fed; Census BTOS. Metrics differ — see chart footnote.</div>
+
+---
+
+<div class="kicker">Appendix · how economists disagree about AI</div>
+
+# Nobody serious says zero — nobody serious has it confirmed
+
+<div class="grid grid-cols-2 gap-5 mt-7">
+  <div class="box" style="border-left:5px solid #64748b;">
+    <div class="text-2xl font-bold">Pessimist · Robert Gordon</div>
+    <div class="mt-2 small">IT was a <b>one-time</b> boost; growth structurally slowed after ~1970. AI won't rival electricity or the motor.</div>
+  </div>
+  <div class="box" style="border-left:5px solid #94a3b8;">
+    <div class="text-2xl font-bold">Sober · Acemoglu (2024)</div>
+    <div class="mt-2 small">≤ <b>0.5–0.66% TFP over 10 yrs</b> (~0.06%/yr). Calls the big forecasts "hyperbolic."</div>
+  </div>
+  <div class="box" style="border-left:5px solid #0f766e;">
+    <div class="text-2xl font-bold">Mismeasured · Brynjolfsson et&nbsp;al.</div>
+    <div class="mt-2 small">The "productivity <b>J-curve</b>": gains are real but hidden in unmeasured intangible / reorg investment — a dip, then a surge.</div>
+  </div>
+  <div class="box" style="border-left:5px solid #0f766e;">
+    <div class="text-2xl font-bold">Optimist · Goldman Sachs</div>
+    <div class="mt-2 small"><b>~+1.5%/yr</b> productivity for a decade (~+$7T) — though GS also finds "no economy-wide effect <i>yet</i>."</div>
+  </div>
+</div>
+
+<div class="mt-6 subclaim font-bold">The honest range runs ~0.5%/yr (Acemoglu) to ~1.5%/yr (Goldman) — which is exactly why the talk says "patience, but not faith."</div>
+
+<div class="source">Gordon, NBER w19895; Acemoglu, "Simple Macroeconomics of AI," NBER w32487; Brynjolfsson, Rock &amp; Syverson, "Productivity J-Curve," NBER w25148; Goldman Sachs Global Economics (2023).</div>
+
+---
+
+<div class="kicker">Appendix · more "new tool vs new model" cases</div>
+
+# Backup: the supermarket & the paperless-office trap
+
+<div class="twocol mt-6">
+  <div class="box small" style="line-height:1.55;">
+    <div class="text-2xl font-bold">Supermarket</div>
+    <div class="mt-2"><b>Tool on the old model:</b> clerks count stock by hand → type it in at night; cashiers key in prices. A faster filing cabinet — the numbers don't move.</div>
+    <div class="mt-2"><b>New model:</b> barcode scan at checkout → inventory updates &amp; reorders itself; the database becomes the source of truth. Less cash in stock, fewer stockouts, fewer counters.</div>
+  </div>
+  <div class="box small" style="line-height:1.55;">
+    <div class="text-2xl font-bold">The "paperless office" trap</div>
+    <div class="mt-2">Predicted in 1975 — yet paper use kept rising for decades. E-signatures had no legal force until <b>UETA 1999 / ESIGN 2000</b>, so firms scanned documents <i>and still</i> printed, wet-signed, mailed, and filed them.</div>
+    <div class="mt-2">A new tool bolted onto a paper process the law wouldn't let you retire — the payoff comes only when the workflow itself is rebuilt.</div>
+  </div>
+</div>
+
+<div class="source">Retail/IT productivity: McKinsey Global Institute 2001; Basker 2012 (barcode scanner). E-signature law: UETA 1999, ESIGN 2000. EDP framing: David 1990 p.357, p.360; Baily &amp; Gordon 1988.</div>
+
+<!--
+(Backup, if asked.) Two more cases of "a new tool on the old model" vs. "rebuilding the model."
+
+Supermarket: tool-on-old-model — clerks count stock by hand, type it in at night; cashiers key in prices; stock data always stale. New model — barcodes + checkout scanners: every sale updates inventory instantly, low stock reorders itself; the computer becomes where stock reality lives, not a filing cabinet you copy into. Gain: less cash in stock, fewer stockouts, fewer counters — from redesigning the store, not buying a computer.
+
+Paperless office: e-signatures had no legal force until UETA 1999 / ESIGN 2000, so firms scanned documents and still printed, wet-signed, mailed, and filed them — a parallel process bolted on. The "paperless office" was predicted in 1975; paper use kept rising for decades. The payoff needs the workflow rebuilt, not just digitized.
+-->
+
