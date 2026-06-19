@@ -303,7 +303,7 @@ Vocabulary: "general-purpose technology" = a technology that spreads across the 
 <div class="source">David 1990 p.356; David 1989 Table 3. Lighting note: 3% of all U.S. residences, 8% of urban dwellings in 1899.</div>
 
 <!--
-Lead with the punch number: eighteen years after the lightbulb, in 1899, only about 3% of U.S. residences had electric light — 8% even in urban dwellings — and electric motors were less than 5% of factory mechanical drive.
+Lead with the punch number: about twenty years after the lightbulb, in 1899, only about 3% of U.S. residences had electric light — 8% even in urban dwellings — and electric motors were less than 5% of factory mechanical drive.
 
 The chart is one line: factory mechanical drive electrified. David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
 
@@ -332,7 +332,7 @@ The chart is one line: factory mechanical drive electrified. David says these ag
 </div>
 
 <div class="mt-3 subclaim font-bold">
-In software: group drive = lift-and-shift; unit drive = re-architecting around the new primitive.
+The constraint was the shaft, not the engine: the payoff came from removing the shaft, not from the new motor.
 </div>
 
 <div class="mt-2 small muted">Unit drive existed by the 1910s — yet the payoff waited for the 1920s. Why then? →</div>
@@ -342,11 +342,9 @@ In software: group drive = lift-and-shift; unit drive = re-architecting around t
 <!--
 This is the most important slide. If they remember one idea, this is it.
 
-In old factories, a central prime mover powered long overhead shafts; belts carried power down to machines. Early electrification often kept that architecture — a motor was added to drive sections of the old shafting. That is group drive: new power source, old factory geometry.
+In old factories one big steam engine turned a long overhead shaft, and belts dropped power to each machine — every machine chained to that one spinning shaft. When electricity arrived, the obvious move was to swap the steam engine for a big electric motor on the same shaft — and it barely helped. The constraint was never the engine; it was the shaft: the whole line spins all day even for one machine (friction/waste), machines must sit in a row near the shaft (not by workflow), they can't run at independent speeds, and one breakdown stops everyone. New power source, same constraints.
 
-Unit drive changed the architecture: each machine got its own motor, power arrived by wire, and the whole building could be redesigned — single-story layouts, flexible placement, easier maintenance, safer cleaner floors.
-
-For engineers, this is the same distinction we live with. Group drive is lift-and-shift: monolith to the cloud, new infrastructure, identical architecture. Unit drive is re-architecting around the new primitive. Bolting a motor onto the old shaft is the same move as bolting a chatbot onto an unchanged workflow — and neither moves the numbers much.
+Unit drive threw the shaft away: a motor on each machine, fed by wire. Now a machine runs only when needed; the floor can be laid out by how the work flows; each runs at its own speed; breakdowns are isolated; and with nothing overhead you get single-story plants, cranes, daylight, clean safe floors. The productivity came from the redesign the motor finally allowed — not from the motor. Same move in our world: bolting a chatbot onto an unchanged workflow changes the engine, not the constraints.
 
 The photo on the right is a Marconi screw-machine department whose archival caption explicitly notes individual driving motors. Caveat: it is from 1917-18, so use it as a concrete visual of unit drive beginning to appear, not as the entire 1920s diffusion story.
 
@@ -396,52 +394,6 @@ This is what "historically contingent" means in plain English: the technology di
 
 ---
 
-<div class="kicker">One industry, three waves</div>
-
-# Same bank, three waves of tech — very different effects on jobs
-
-<div class="grid grid-cols-3 gap-4 mt-7">
-  <div class="metric" style="border-left-color:#64748b;">
-    <div class="number" style="color:#64748b;font-size:22px;">1960s–70s</div>
-    <div class="mt-2 text-2xl font-bold">Back office goes digital</div>
-    <div class="mt-2 small">Records computerized; bookkeeping speeds up. You still visit the branch; the teller still serves you. <b>Tellers ≈ unchanged.</b></div>
-  </div>
-  <div class="metric">
-    <div class="number" style="font-size:22px;">1970s–2000s</div>
-    <div class="mt-2 text-2xl font-bold">ATM extends the branch</div>
-    <div class="mt-2 small">Tellers per branch fall (~20→13), but cheaper branches let banks open <b>~40% more</b>. Total tellers <b>rise</b> (~300k → ~600k).</div>
-  </div>
-  <div class="metric" style="border-left-color:#0f766e;">
-    <div class="number" style="color:#0f766e;font-size:22px;">2010s–</div>
-    <div class="mt-2 text-2xl font-bold">Mobile moves the bank home</div>
-    <div class="mt-2 small">Travel distance ≈ 0; branches become unnecessary → closures (peak 2009). Tellers <b>fall</b> (~600k → mid-300k).</div>
-  </div>
-</div>
-
-<div class="mt-5 subclaim font-bold">A new tool made the old model cheaper without cutting jobs. Headcount moved only when the model itself changed.</div>
-
-<div class="mt-2 small muted">Why only the 2010s? The pieces had to line up — smartphone + app store (2007–08), 4G (2010), and a 2004 law (Check 21) that legalized depositing a check by photo. The payoff was historically contingent — just like the dynamo.</div>
-
-<div class="source">Bessen, IMF F&amp;D 2015 (urban branches +~40% &amp; tellers 20→13, 1988–2004; ~400k ATMs); FDIC (branch peak 2009); BLS OEWS (teller counts, rounded). Post-2009 decline also reflects 2008-crisis mergers and falling cash use.</div>
-
-<!--
-David's real target was not the factory — it was the computer productivity paradox. The cleanest place to watch it is one industry we all use: banking.
-
-Wave one, 1960s–70s: banks computerize the back office. Records go digital, bookkeeping speeds up — but you still drive to the branch and a teller still serves you. The computer made the old way faster; it did not change who does the work. Teller numbers barely move.
-
-Wave two, the ATM (1970s on): a cash machine extends the bank's reach. It cut tellers needed per branch — about 20 to 13 between 1988 and 2004 (Bessen). But the twist economists love: because the ATM made each branch cheaper, and convenience then meant being physically close, banks opened ~40% more branches. Fewer tellers per branch × many more branches = total tellers ROSE, ~300k (1970) to ~600k (2010). The machine expected to kill the teller grew the teller.
-
-Wave three, mobile banking (2010s): the bank moves into your phone — travel distance drops to ~zero. Now the branch is a cost, not a weapon. Banks close branches (US count peaked 2009) and tellers finally fall — into the mid-300-thousands by the early 2020s. Be fair: post-2008 mergers and falling cash use pushed the same way, not mobile alone.
-
-Punchline — the whole talk in one line: for ~40 years the technology made banking cheaper WITHOUT cutting the workforce. The jobs moved only when the model itself changed. A new tool makes the old model efficient; only a new model changes the work.
-
-Why did mobile land only in the 2010s, when "phone banking" existed in the late 1990s? The complements had to line up: smartphone + app store (2007–08), fast mobile internet (4G, 2010), and the underrated one — a 2004 law, Check 21, that made depositing a check by photo legal at all. The idea was old; the payoff was historically contingent, exactly like the dynamo waiting for the 1920s.
-
-(Bridge to AI:) So hold that question for AI: are we adding a new tool to the old model, or building a new model?
--->
-
----
-
 <div class="kicker">35 Years On</div>
 
 # The computer payoff came late — then faded
@@ -486,22 +438,22 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
 
 <div class="kicker">AI Extension</div>
 
-# AI may still be in its group-drive phase
+# Most AI today is still bolted on
 
 <div class="twocol mt-5">
   <div class="box" style="background:#fff7ed;border-color:#fdba74;">
-    <div class="text-2xl font-bold" style="color:#b45309;">Group drive — bolted on</div>
-    <div class="mt-3 small">Copilot in the same IDE &amp; PR ritual · a RAG bot over a knowledge base nobody reorganized · a support bot <i>beside</i> agents → <b>+14%</b> resolved/hr, real &amp; measured (Brynjolfsson et al. 2023).</div>
-    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. Org chart &amp; "definition of done" unchanged.</div>
+    <div class="text-2xl font-bold" style="color:#b45309;">Bolt-on (retrofit)</div>
+    <div class="mt-3 small"><b>opencode</b> as a faster autocomplete — same repo, same pull request, same review, same "done." Real gains (double-digit task speedups, Brynjolfsson et al. 2023) — but the workflow is unchanged.</div>
+    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. Org chart &amp; "done" unchanged.</div>
   </div>
   <div class="box" style="background:#ecfdf5;border-color:#5eead4;">
-    <div class="text-2xl font-bold" style="color:#0f766e;">Unit drive — redesigned</div>
-    <div class="mt-3 small">An agent owns an end-to-end slice · evals/tests become the source of truth · review gates &amp; accountability rebuilt · the whole queue rebuilt around the agent (Klarna 2024).</div>
+    <div class="text-2xl font-bold" style="color:#0f766e;">Re-architect (redesign)</div>
+    <div class="mt-3 small">Agent owns a ticket end-to-end · your tests/CI = the gate it must pass · review &amp; accountability for agent PRs redesigned · <b>on-prem model → a private learning loop on your own code</b> (a SaaS Copilot can't).</div>
     <div class="mt-3 small" style="color:#0f766e;font-weight:700;">Org chart &amp; "done" change — this is what moves the numbers.</div>
   </div>
 </div>
 
-<div class="mt-4 claim">Test: if your AI rollout didn't change your org chart or your definition of done — you built group drive.</div>
+<div class="mt-4 claim">A friendly self-check (not a scorecard): has it changed our org chart or our definition of "done" yet? Bolt-on is the natural first step — the fun question is what our re-architect moment looks like.</div>
 
 <div class="mt-2 small muted"><i>And from inside, you can't yet tell which you built: Klarna rebuilt its queue around AI in 2024 — then re-hired humans in 2025.</i></div>
 
@@ -510,15 +462,15 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
 <!--
 Now apply the lens to AI. Put a sharp claim on the table — as a provocation, not a verdict, because we are standing inside the transition and cannot yet measure it.
 
-The claim, stated sharply so you can argue with it: most of what we have built with LLMs so far looks like group drive. A chatbot bolted onto an old workflow. Copilot autocompleting inside the same IDE, same review process, same PR ritual — you type less, but the workflow is unchanged. A RAG bot in front of a knowledge base nobody reorganized. New power source, old factory geometry.
+Make it about us — gently; this is a sharing, not a report card. We run opencode against our own on-prem model, and like almost everyone right now, we're mostly in the bolt-on phase: the agent writes and edits code faster, but it still flows through the same repo, pull request, review, and definition of "done." That's real, useful, and exactly where you'd expect to start — the 1920s factory first just swapped the engine too. It's step one, not a mistake. The point isn't that we're doing it wrong; it's that there's a further step worth getting excited about.
 
-But honor David's caution: from inside a transition you genuinely cannot tell early redesign from retrofit — the 1917 unit-drive photo looked like nothing in the aggregate at the time. So "most AI is group drive" is a question to hold against your own work, not a confident diagnosis. It does not prove AI has failed, and it does not prove it will succeed. The evidence today is strongest at the task or firm level — real, measured gains in specific writing and customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable, economy-wide productivity regime change.
+But honor David's caution: from inside a transition you genuinely cannot tell early redesign from retrofit — the 1917 photo of motors-on-every-machine looked like nothing in the aggregate at the time. So "most AI is bolt-on" is a question to hold against your own work, not a confident diagnosis. It does not prove AI has failed, and it does not prove it will succeed. The evidence today is strongest at the task or firm level — real, measured gains in specific writing and customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable, economy-wide productivity regime change.
 
-So: what is AI's unit-drive moment? Concrete candidates to argue about — (1) an agent owns an end-to-end slice of work, not a sub-step a human stitches together; (2) evals and tests become the source of truth, the way the database did in the computer's unit-drive era; (3) review gates, accountability, and responsibility boundaries get redesigned — who is on the hook when the agent ships? That is an org-chart change, not a tooling change; (4) pipelines designed assuming a probabilistic component (retries, verification, fallback), not a deterministic one bolted in.
+So: what would AI's re-architect moment look like for us? Concrete candidates to argue about — (1) the agent owns a ticket end-to-end, not a snippet a human stitches in; (2) our tests and CI become the gate the agent must pass — tests as the source of truth; (3) review gates and accountability get redesigned — who reviews an agent's PR, and who is on the hook when its code ships? That is an org-chart change, not a tooling change; (4) pipelines designed assuming a probabilistic component (retries, verification, fallback), not a deterministic one bolted in. And (5) the one our on-prem setup uniquely enables: a private learning loop — capture our own code and review traces, build private evals on our codebase, even tune the local model on our repo, so it gets better at our system over time. A SaaS Copilot can't give you that; an in-house model can. (This is exactly Nadella's "own your learning loop" point — see Q&A.)
 
-One concrete shape of unit drive: a support org that does not just drop a bot beside its agents, but rebuilds the whole tier-one queue around an AI agent — defined escalation paths, a measured deflection rate, humans re-scoped to handle only what the agent hands up. That is a workflow-and-org redesign, not a tool bolted on. Most "we added an AI assistant" projects are not that.
+One concrete shape of the re-architect version: a support org that does not just drop a bot beside its agents, but rebuilds the whole tier-one queue around an AI agent — defined escalation paths, a measured deflection rate, humans re-scoped to handle only what the agent hands up. That is a workflow-and-org redesign, not a tool bolted on. Most "we added an AI assistant" projects are not that.
 
-The structural warning — David's own sharpest point. Factories got redesigned partly because the old ones physically wore out and had to be replaced; that replacement moment forced the redesign. Information systems and workflows do not wear out. A 2009 process can run untouched for fifteen years. Nothing forces the AI rewrite — so AI's unit-drive moment may be structurally slower than electricity's, because decay will not do the work for us.
+The structural warning — David's own sharpest point. Factories got redesigned partly because the old ones physically wore out and had to be replaced; that replacement moment forced the redesign. Information systems and workflows do not wear out. A 2009 process can run untouched for fifteen years. Nothing forces the AI rewrite — so AI's re-architect moment may be structurally slower than electricity's, because decay will not do the work for us.
 
 (Optional interaction.) Ask the room: name one thing your team does differently because of AI — not faster, differently. The silence, or the rare good answer, is the most persuasive evidence in this whole talk.
 -->
@@ -527,7 +479,7 @@ The structural warning — David's own sharpest point. Factories got redesigned 
 
 <div class="kicker">Takeaway</div>
 
-# Build the unit drive
+# Redesign the work, don't just add the tool
 
 <div class="threecol mt-8">
   <div class="box">
@@ -571,7 +523,7 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | EDP vs PC/cloud | "Computers are not dynamos" (p.360) | Why info systems never wear out — so the rewrite is never forced</div>
+<div class="mt-8 text-2xl">Appendix candidates: TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | Nadella's "learning loop" (a vendor's take on the redesign)</div>
 
 ---
 
@@ -675,4 +627,39 @@ Supermarket: tool-on-old-model — clerks count stock by hand, type it in at nig
 
 Paperless office: e-signatures had no legal force until UETA 1999 / ESIGN 2000, so firms scanned documents and still printed, wet-signed, mailed, and filed them — a parallel process bolted on. The "paperless office" was predicted in 1975; paper use kept rising for decades. The payoff needs the workflow rebuilt, not just digitized.
 -->
+
+---
+
+<div class="kicker">Appendix · the banking case</div>
+
+# Banking: three waves of tech, three job outcomes
+
+<div class="grid grid-cols-3 gap-4 mt-7">
+  <div class="metric" style="border-left-color:#64748b;">
+    <div class="number" style="color:#64748b;font-size:22px;">1960s–70s</div>
+    <div class="mt-2 text-2xl font-bold">Back office goes digital</div>
+    <div class="mt-2 small">Records computerized; bookkeeping speeds up. You still visit the branch; the teller still serves you. <b>Tellers ≈ unchanged.</b></div>
+  </div>
+  <div class="metric">
+    <div class="number" style="font-size:22px;">1970s–2000s</div>
+    <div class="mt-2 text-2xl font-bold">ATM extends the branch</div>
+    <div class="mt-2 small">Tellers per branch fall (~20→13), but cheaper branches let banks open <b>~40% more</b>. Total tellers <b>rise</b> (~300k → ~600k).</div>
+  </div>
+  <div class="metric" style="border-left-color:#0f766e;">
+    <div class="number" style="color:#0f766e;font-size:22px;">2010s–</div>
+    <div class="mt-2 text-2xl font-bold">Mobile moves the bank home</div>
+    <div class="mt-2 small">Travel distance ≈ 0; branches become unnecessary → closures (peak 2009). Tellers <b>fall</b> (~600k → mid-300k).</div>
+  </div>
+</div>
+
+<div class="mt-5 subclaim font-bold">A new tool made the old model cheaper without cutting jobs. Headcount moved only when the model itself changed.</div>
+
+<div class="mt-2 small muted">Why only the 2010s? smartphone + app store (2007–08), 4G (2010), and a 2004 law (Check 21) that legalized depositing a check by photo. Historically contingent — like the dynamo.</div>
+
+<div class="source">Bessen, IMF F&amp;D 2015 (tellers 20→13 &amp; urban branches +~40%, 1988–2004; ~400k ATMs); FDIC (branch peak 2009); BLS OEWS (teller counts, rounded). Post-2009 decline also reflects 2008-crisis mergers and falling cash use.</div>
+
+<!--
+(Backup, if asked — the cleanest modern instance.) David's real target was the computer paradox, and banking is where you can watch it. Wave 1 (back office, 1960s–70s): records digitized, but you still visit the branch — tellers ≈ unchanged. Wave 2 (ATM): cut tellers per branch (~20→13), but cheaper branches → ~40% more branches → total tellers ROSE (~300k→600k). The machine expected to kill the teller grew the teller. Wave 3 (mobile, 2010s): the bank moves into your phone; branches become a cost not a weapon → closures (peak 2009) → tellers fall to mid-300k. The tool made the old model cheaper; only the new model changed the jobs. (Honest caveat: post-2008 mergers and falling cash use also drove closures.)
+-->
+
 
