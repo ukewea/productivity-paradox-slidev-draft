@@ -219,45 +219,41 @@ That gap — visible everywhere, invisible in the numbers — is the productivit
 
 ---
 
-<div class="kicker">Definition</div>
+<div class="kicker">Productivity Paradox</div>
 
-# Visible adoption, unclear payoff
+# A tool can feel useful before the team gets faster
 
 <div class="mt-14 claim text-3xl text-center">
-Real value — <span class="text-teal-700">not yet</span> real productivity.
+Individual value first. <span class="text-teal-700">System payoff</span> later.
 </div>
 
 <div class="threecol mt-14 text-center">
   <div class="soft" v-click>
-    <div class="text-2xl font-bold">Tools show up</div>
+    <div class="text-2xl font-bold">People use it</div>
   </div>
   <div class="soft" v-click>
-    <div class="text-2xl font-bold">Numbers lag</div>
+    <div class="text-2xl font-bold">Workflow stays the same</div>
   </div>
   <div class="soft" v-click>
-    <div class="text-2xl font-bold">Why? — unclear</div>
+    <div class="text-2xl font-bold">Team payoff unclear</div>
   </div>
 </div>
 
-<div class="source">Keep TFP/MFP for Q&A. In the talk, say "productivity numbers."</div>
+<div class="source">Frame as a system-level puzzle, not a verdict on whether the tool is useful.</div>
 
 <!--
-Skip the TFP formula. For this room, an example is enough.
+Do not turn this into "is AI useful?" That is not the sharing goal.
 
-Concrete version first: your team adopts Copilot. Everyone uses it every day. Nobody can point to the sprint that actually got faster. That gap is the paradox.
+The tension is softer and more observational: a tool can feel valuable at the individual task level before it visibly changes team delivery, sector output, or measured productivity. That gap is the productivity paradox.
 
-(Optional show of hands.) Who here would say AI has measurably sped up your team's delivery? Now — who uses it every day? The gap between those two shows of hands is basically the whole talk.
-
-The important point: the paradox does not mean "the tool has no value." It means the value is not yet visible as system-level productivity.
-
-Two separate reasons the numbers lag, and David leans on both: (1) real — the work has not been redesigned around the tool yet; (2) measurement — the official statistics are partly blind, missing quality gains and whole new categories of output, so real gains show up late and understated. Keep the measurement point; it returns on the payoff slide.
+Use a concrete engineering example only to make the idea intuitive: everyone may use an assistant daily, but the sprint, review flow, or definition of done may not yet look different. That does not prove failure. It means system-level payoff is a separate thing to watch.
 -->
 
 ---
 
-<div class="kicker">David's Move</div>
+<div class="kicker">David's Mirror</div>
 
-# David used electrification as a mirror for the computer age
+# Computers looked like early electricity
 
 <div class="twocol mt-7">
   <div class="soft">
@@ -273,35 +269,29 @@ Two separate reasons the numbers lag, and David leans on both: (1) real — the 
 </div>
 
 <div class="mt-7 subclaim font-bold">
-His question: why do general-purpose technologies (electricity, computers… maybe AI) often pay off late?
+David used a known historical case to understand a confusing present.
 </div>
 
-<div class="mt-3 small muted">Long, variable, not guaranteed — visible technology first, measured payoff later.</div>
+<div class="mt-3 small muted">Same puzzle: visible technology first, measured payoff later.</div>
 
 <div class="source">David 1990, p.355-356.</div>
 
 <!--
-David's move is not "computers are literally dynamos."
+David's move is not "computers are literally dynamos" and not a fixed historical clock.
 
-He uses electrification as a historical mirror. Around 1900, the electrical age was visible. Around 1990, the computer age was visible. In both cases, the visible technology was ahead of the measured productivity payoff.
+The move is methodological: when 1990 computers were visible but payoff was still unclear, David looked back to electrification — a case whose later payoff we can now see with hindsight. Around 1900, the electrical age was visible. Around 1990, the computer age was visible. In both cases, visible technology arrived before measured payoff.
 
-If someone asks why these two moments are being compared: each is a long interval after the enabling breakthrough — but the interval varies and is NOT a fixed clock. Edison and Swan's incandescent lamp and early central stations appear around 1879-1881, yet diffusion into factory drive was still only around half by 1919. Intel's memory chip and microprocessor appear around 1969-1970; the computer payoff shows up much later. Resist any "neat twenty-year rule" — the point is lag and contingency, not a constant.
-
-Vocabulary: "general-purpose technology" = a technology that spreads across the whole economy (electricity, the computer, maybe AI); that breadth is why the payoff is slow. And in David's title, "dynamo" = the electric generator, his shorthand for the whole electrification regime.
+Keep this slide light. Do not spend main-talk time on GPT definitions, exact dating symmetry, or "dynamo" vocabulary. Those are appendix/Q&A details.
 -->
 
 ---
 
 <div class="kicker">Diffusion Lag</div>
 
-# Diffusion is not the payoff
+# First lag: adoption itself took decades
 
 <div class="mt-3">
   <img src="/assets/electrification-diffusion.svg" class="diagram" style="max-height:330px;" />
-</div>
-
-<div class="mt-2 subclaim font-bold">
-This chart proves delay, not productivity. Productivity is a separate claim.
 </div>
 
 <div class="source">David 1990 p.356; David 1989 Table 3. Lighting note in speaker notes.</div>
@@ -311,69 +301,70 @@ Lead with the punch number: about twenty years after the lightbulb, in 1899, onl
 
 The chart is one line: factory mechanical drive electrified. David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
 
-Do not claim the 1920s slope suddenly "surges"; visually, the point is safer and stronger: diffusion was slow. Also do not claim this diffusion chart proves productivity. The chart proves only that electricity took a long time to enter the factory core.
+The main point is what the chart CAN prove: adoption itself was slow. Do not use this chart as productivity evidence.
 
-(Beat, then the lesson — the spine of the talk.) Invention is not diffusion. Diffusion is not redesign. Redesign — rebuilding how the work is done around the tool — is what eventually moves productivity. The productivity evidence is a separate claim. For the main talk, keep the mechanism simple: diffusion was slow, and only redesign can turn a technology into measured productivity.
+(Bridge.) So far we have only shown the first lag: invention did not immediately become core factory adoption. The next question is separate: did measured productivity later jump? That is what the TFP chart handles.
+
+(Q&A only.) If someone challenges the slope, say the 1920s claim is not about an adoption-curve kink; it is about measured productivity.
 
 (Appendix / only if asked.) The original table also has a "secondary electric motor" series. In David/DuBoff's usage, primary motors ran on purchased electricity from utilities; secondary motors ran on electricity generated inside the plant. Treat secondary-motor penetration as a proxy for deeper factory electrification and unit-drive diffusion, not as a literal motor type. Q&A material — do not spend main-talk time on it.
 -->
 
 ---
 
-<div class="kicker">Mechanism · 1 of 2</div>
+<div class="kicker">Payoff Evidence</div>
 
-# Group drive: one shaft drives the whole floor
+# Productivity jumped in the 1920s
 
-<div class="photo-pair mt-2">
-  <div class="photo-panel">
-    <img src="/assets/kammgarnspinnerei-pfaffendorf-1925.jpg" style="object-position:50% 40%;" />
-    <div class="label">The real thing (1925)</div>
-    <div class="caption">Kammgarnspinnerei Pfaffendorf, Leipzig.</div>
-  </div>
-  <div class="photo-panel">
-    <img src="/assets/line-shaft-group-drive.svg" style="object-fit:contain;filter:none;background:#fff;" />
-    <div class="label">Same idea, simplified</div>
-    <div class="caption">Even with an electric motor: one motor → shaft → belts → every machine</div>
-  </div>
+<div class="mt-4">
+  <img src="/assets/manufacturing-tfp-electrification-era.svg" class="diagram" style="max-height:350px;" />
 </div>
 
-<div class="mt-3 subclaim font-bold">Swap the steam engine for a motor on the same shaft → barely helps. The constraint is the shaft, not the engine.</div>
+<div class="mt-2 subclaim font-bold">TFP ≈ overall production efficiency after accounting for inputs.</div>
 
-<div class="source">David 1990 p.357-358; Devine 1983. Photo: user-provided Pfaffendorf image. Schematic: Claude.</div>
+<div class="source">David 1989, "Computer and Dynamo," Table 2, Kendrick-based U.S. manufacturing TFP growth rates, geometric weighting. See also David 1990 p.359.</div>
 
 <!--
-Centerpiece, part 1. Old factories ran group drive: one big steam engine turned a long overhead line shaft, and belts dropped power to each machine — every machine chained to that one spinning shaft. The historical photo (left) is hard to parse, so I had Claude draw the simplified schematic (right). The point the schematic makes: even if you swap the steam engine for an ELECTRIC MOTOR, as long as it still drives the same shaft, it is STILL group drive — and it barely helps. The constraint was never the engine; it was the shaft: the whole line spins all day even for one machine (friction/waste), machines must sit in a row near the shaft (not by workflow), they can't run at independent speeds, and one breakdown stops everyone.
+Keep this simple. This is not a TFP lecture.
+
+Say: diffusion was only adoption evidence. This slide is the productivity evidence. David's longer 1989 paper reports period-average manufacturing TFP growth. You can roughly treat TFP as production efficiency after accounting for inputs. The key contrast is 1909-1919 at about 0.17% per year versus 1919-1929 at about 5.29% per year.
+
+Then bridge: now that we have evidence of adoption lag and later productivity jump, the real question is mechanism — what can turn a new technology into a new production system?
 -->
 
 ---
 
-<div class="kicker">Mechanism · 2 of 2</div>
+<div class="kicker">Redesign Mechanism</div>
 
-# Retrofit vs redesign: group drive → unit drive
+# New motor, old shaft
 
 <div class="photo-pair mt-2">
   <div class="photo-panel">
     <img src="/assets/kammgarnspinnerei-pfaffendorf-1925.jpg" style="object-position:50% 40%;" />
-    <div class="label">Group drive: shafts + belts</div>
+    <div class="label">New motor, old shaft</div>
     <div class="caption">Kammgarnspinnerei Pfaffendorf, Leipzig, c. 1925.</div>
   </div>
   <div class="photo-panel">
     <img src="/assets/marconi-individual-driving-motors.jpg" style="object-position:50% 48%;" />
-    <div class="label">Unit drive: motors at machines</div>
+    <div class="label">Remove the shaft</div>
     <div class="caption">Screw-machine dept. with individual driving motors, Marconi, 1917-18.</div>
   </div>
 </div>
 
-<div class="mt-3 subclaim font-bold">Remove the shaft → redesign the floor. The productivity jump comes from the redesign, not the motor.</div>
+<div class="mt-3 subclaim font-bold">New tool, old playbook. The bigger change comes when production is rearranged around the tool.</div>
 
-<div class="mt-2 small muted">Main line: electrification enabled unit-drive redesign; redesign is what moves productivity.</div>
+<div class="mt-2 small muted">中文 punchline: 新馬達，舊軸心；新工具，舊打法。</div>
 
 <div class="source">David 1990 p.357-358 (mechanism), p.359 (TFP decomposition); Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
 
 <!--
-Centerpiece, part 2 — the side-by-side. Left = group drive (shafts + belts), right = unit drive (a motor on each machine). The point: once you remove the shaft, you can redesign the whole floor — machines run on demand, laid out by workflow, independent speeds, isolated breakdowns, single-story plants with cranes and daylight. Productivity jumps from the REDESIGN the motor allowed, not from the motor itself. (Marconi photo is 1917-18 — unit drive beginning to appear, not the whole 1920s story.)
+Keep this to 45-60 seconds. Do not teach the mechanics of group drive and unit drive.
 
-Carry-forward line for the rest of the talk: bolting a motor onto the old shaft is the same move as bolting a chatbot onto an unchanged workflow — you change the engine, not the constraints.
+Use the metaphor: early electrification could mean a new motor attached to the same old shaft. That is not useless; it is the first stage. But it is still "new motor, old shaft" — or in Chinese, 新工具，舊打法.
+
+The larger productivity story appears when old constraints can be removed and production can be rearranged around the new tool. Treat this as an illustrative mechanism, not as the single cause of the whole 1920s TFP surge.
+
+Carry-forward line for the rest of the talk: a new tool can first speed up yesterday's playbook; the historically interesting question is whether production later reorganizes around it.
 
 (Bridge.) The "why exactly the 1920s?" story is good Q&A material: power prices, replacement timing, design know-how, and capital all had to line up. For the main talk, skip that detour and move straight to computers: the pattern repeated.
 
@@ -438,24 +429,20 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
   </div>
 </div>
 
-<div class="mt-4 claim">Self-check (not a scorecard): has it changed our org chart or our "definition of done" yet?</div>
+<div class="mt-4 claim">A lens for watching the next few years: which sectors reorganize production around AI?</div>
 
-<div class="source">AI analogy as a design question, not a forecast. Q&A: task-level evidence, private learning loops, Klarna. David 1990 p.360: "Computers are not dynamos."</div>
+<div class="source">AI analogy as an observation lens, not a forecast. Q&A: task-level evidence, private learning loops, Klarna. David 1990 p.360: "Computers are not dynamos."</div>
 
 <!--
-Now apply the lens to AI. Put a sharp claim on the table — as a provocation, not a verdict, because we are standing inside the transition and cannot yet measure it.
+Now apply the lens to AI. Keep the tone observational, not evangelical and not skeptical-for-skepticism's-sake. The point is not to debate whether AI is useful. The point is to watch whether AI changes how different sectors produce.
 
-Make it about us — gently; this is a sharing, not a report card. We run opencode against our own on-prem model, and like almost everyone right now, we're mostly in the bolt-on phase: the agent writes and edits code faster, but it still flows through the same repo, pull request, review, and definition of "done." That's real, useful, and exactly where you'd expect to start. It's step one, not a mistake. The point isn't that we're doing it wrong; it's that there's a further step worth getting excited about.
+Use the engineering workflow only as an example, not as the thesis. For example: opencode can help write, edit, and test code while the repo, PR, review, and definition of "done" remain mostly the same. That is real value, and it may be an early "new tool, old playbook" phase.
 
-But honor David's caution: from inside a transition you genuinely cannot tell early redesign from retrofit — the 1917 photo of motors-on-every-machine looked like nothing in the aggregate at the time. So "most AI is bolt-on" is a question to hold against your own work, not a confident diagnosis. It does not prove AI has failed, and it does not prove it will succeed. The evidence today is strongest at the task or firm level — real, measured gains in specific writing and customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable, economy-wide productivity regime change.
+Honor David's caution: from inside a transition, you cannot easily tell temporary retrofit from the beginning of real reorganization. The evidence today may be strongest at task or firm level. What we cannot yet say is that AI has already caused a durable economy-wide productivity regime change.
 
-So: what would AI's re-architect moment look like for us? Keep only one strong contrast in the main talk — bolt-on AI means the old PR/review/done workflow stays intact; redesigned AI means the agent can own a bounded ticket, tests and CI become the gate, and humans move up to requirements, risk, and accountability. Save private learning loops, evals, tuning, and Klarna for Q&A.
+Keep only one contrast in the main talk: bolt-on AI keeps the old workflow intact; redesigned AI changes ownership, gates, review, responsibility, or the definition of done. Save private learning loops, evals, tuning, support-org examples, and Klarna for Q&A.
 
-One concrete shape of the re-architect version: a support org that does not just drop a bot beside its agents, but rebuilds the whole tier-one queue around an AI agent — defined escalation paths, a measured deflection rate, humans re-scoped to handle only what the agent hands up. That is a workflow-and-org redesign, not a tool bolted on. Most "we added an AI assistant" projects are not that.
-
-The structural warning — David's own sharpest point. Factories got redesigned partly because the old ones physically wore out and had to be replaced; that replacement moment forced the redesign. Information systems and workflows do not wear out. A 2009 process can run untouched for fifteen years. Nothing forces the AI rewrite — so AI's re-architect moment may be structurally slower than electricity's, because decay will not do the work for us.
-
-(Optional interaction.) Ask the room: name one thing your team does differently because of AI — not faster, differently. The silence, or the rare good answer, is the most persuasive evidence in this whole talk.
+Main close for this slide: David does not tell us AI will definitely boom. He gives us a way to watch the next few years: where is AI merely accelerating old playbooks, and where is it causing production itself to be rearranged?
 -->
 
 ---
@@ -474,18 +461,18 @@ The structural warning — David's own sharpest point. Factories got redesigned 
     <div class="mt-3 small">Early statistics alone may be too impatient.</div>
   </div>
   <div class="box">
-    <div class="text-2xl font-bold">Ask the design question</div>
-    <div class="mt-3 small">Are we retrofitting, or redesigning the system?</div>
+    <div class="text-2xl font-bold">Watch the redesign</div>
+    <div class="mt-3 small">Where does production reorganize around the tool?</div>
   </div>
 </div>
 
 <div class="mt-8 subclaim font-bold">
-Factories got redesigned because the old ones fell apart. Your codebase won't — nothing forces the AI rewrite except you.
+Big technologies often diffuse first, reorganize production later, and only then show up clearly in productivity.
 </div>
 
 <div class="quote mt-7">
-Are we bolting new tools onto old shafts,<br/>
-or redesigning the factory?
+New tools, old playbooks —<br/>
+or new ways to produce?
 </div>
 
 <div class="source">Closing thesis: analogy as a thinking tool, not a forecast.</div>
@@ -493,11 +480,11 @@ or redesigning the factory?
 <!--
 The close is conservative, but it should still have teeth.
 
-David is not saying "wait long enough and every new technology will save us." He is saying: do not judge a general-purpose technology too quickly from early productivity numbers. The electricity story was never about the generator alone — it was about redesigning factories. The computer story was never about buying computers — it was about becoming digital-native.
+David is not saying "wait long enough and every new technology will save us." He is saying: do not judge a broad technology too quickly from early productivity numbers. The electricity story was never about the generator alone — it was about the later reorganization of production. The computer story was never only about buying computers — it was about firms eventually becoming digital-native.
 
-So for AI the question is not only "is the technology good enough?" It is "can we redesign work around it?" — and then the sharper version: factories got redesigned because the old ones fell apart; your codebase won't. Nothing will force the AI rewrite except you, so the only question that matters is whether you will do it on purpose.
+So for AI, the useful stance is historical patience: not "bubble or revolution?" on day one, but watching which sectors only speed up yesterday's playbook and which sectors eventually reorganize production around the tool.
 
-(Land the line, then stop.) Are we bolting new tools onto old shafts, or redesigning the factory?
+(Land the line, then stop.) New tools, old playbooks — or new ways to produce?
 -->
 
 ---
@@ -506,7 +493,7 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: why the 1920s | TFP surge chart | TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
+<div class="mt-8 text-2xl">Appendix candidates: why the 1920s | TFP details & caveats | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
 
 ---
 
@@ -545,9 +532,9 @@ This is what "historically contingent" means in plain English: the technology di
 
 ---
 
-<div class="kicker">Appendix · Productivity Evidence</div>
+<div class="kicker">Appendix · TFP Details</div>
 
-# Backup: the TFP surge is visible in the 1920s
+# Backup: TFP details and caveats
 
 <div class="mt-4">
   <img src="/assets/manufacturing-tfp-electrification-era.svg" class="diagram" style="max-height:360px;" />
@@ -556,9 +543,9 @@ This is what "historically contingent" means in plain English: the technology di
 <div class="source">David 1989, "Computer and Dynamo," Table 2, Kendrick-based U.S. manufacturing TFP growth rates, geometric weighting. See also David 1990 p.359.</div>
 
 <!--
-Use this only if someone asks: "If the diffusion curve doesn't prove productivity, where is the productivity evidence?"
+Use this only if someone asks for more detail on the productivity chart.
 
-Answer: not in the diffusion curve. David's longer 1989 paper reports period-average manufacturing TFP growth. The geometric-weighted Kendrick-based measure is 0.17% per year in 1909-1919 and 5.29% per year in 1919-1929. That is the productivity surge. David 1990 then connects roughly half of the acceleration statistically to the growth of secondary electric motor capacity, while warning that unit drive was not the whole story.
+David's longer 1989 paper reports period-average manufacturing TFP growth. The geometric-weighted Kendrick-based measure is 0.17% per year in 1909-1919 and 5.29% per year in 1919-1929. David 1990 then connects roughly half of the acceleration statistically to the growth of secondary electric motor capacity, while warning that unit drive was not the whole story.
 
 Important caveat: this is not an annual time series. The bars are period averages. Do not read this as exact year-by-year timing; read it as the historical evidence that the 1920s claim is about measured productivity, not a kink in the adoption curve.
 -->

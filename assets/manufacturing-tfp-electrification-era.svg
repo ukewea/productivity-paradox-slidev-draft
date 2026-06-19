@@ -19,7 +19,7 @@
   </defs>
 
   <rect class="bg" width="1200" height="560"/>
-  <text class="title" x="72" y="48">The productivity surge shows up in TFP, not in the diffusion curve</text>
+  <text class="title" x="72" y="48">The productivity surge shows up in manufacturing TFP</text>
   <text class="subtitle" x="72" y="76">Average annual U.S. manufacturing TFP growth, percent per year</text>
 
   <!-- plot area: x 120..1090, y 100..420, max 6% -->
@@ -84,5 +84,5 @@
   <text class="callout" x="820" y="145">TFP acceleration, 1919-1929</text>
 
   <rect x="120" y="496" width="970" height="42" rx="8" fill="#ffffff" stroke="#dbe4ee"/>
-  <text class="note" x="140" y="518">These are period-average growth rates, not annual observations. Use this as backup evidence that the 1920s point is about measured productivity, not a visible kink in diffusion.</text>
+  <text class="note" x="140" y="518">These are period-average growth rates, not annual observations. Main contrast: 1909-1919 was low; 1919-1929 was high.</text>
 </svg>
