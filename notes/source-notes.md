@@ -44,6 +44,10 @@
 - A simple talk-level explanation: in the Census/Duboff power statistics, primary electric motors typically belong to purchased-electricity/rented-power categories, while secondary electric motors are powered by electricity generated inside the plant and tracked separately to avoid double-counting the prime mover.
 - David treats rising secondary electric motor penetration as a proxy for deeper factory electrification and the unit-drive transition. Do not explain it as a literal count of "second motors" or as precise one-machine-one-motor adoption.
 - In the main deck, use only the broader and more intuitive `factory mechanical drive electrified` line.
+- Do not subtract `secondary_motor_penetration_pct` from `factory_drive_electrified_pct` to infer primary motors. The denominators are different:
+  - Factory drive electrified = primary + secondary electric motor HP as a share of total mechanical-drive HP in manufacturing.
+  - Secondary motor penetration = secondary motor HP as a share of non-electric direct-drive HP plus secondary motor HP.
+- For raw primary/secondary motor capacity, use `data/electric-motor-capacity-devine1982.csv` and `assets/electric-motor-capacity-devine1982.svg`. The raw series comes from Devine 1982 Table 5, drawing on DuBoff Table 13. Note that Devine has a 1925 row whereas David Table 3 has 1924, so do not silently merge those two rows.
 
 ## David 1989 Table 3 Data Used For Chart
 
@@ -56,6 +60,28 @@
 | 1919 | 53.1% | 32.6% |
 | 1924 | 67.1% | 45.0% |
 | 1929 | 78.4% | 56.4% |
+
+## Devine 1982 Raw Motor Capacity Data Used For Appendix Chart
+
+- Source: Warren D. Devine Jr., "From Shafts to Wires: Historical Perspective on Electrification," Table 5, drawing on DuBoff Table 13.
+- Data file in this repo: `data/electric-motor-capacity-devine1982.csv`.
+- Chart asset in this repo: `assets/electric-motor-capacity-devine1982.svg`.
+- Primary motors are motors driven by electricity purchased from an electric utility.
+- Secondary motors are motors powered by electricity generated inside the manufacturing establishment.
+- 1889 has no primary/secondary distinction in the source statistics.
+
+| Year | Secondary motor hp, 000s | Primary motor hp, 000s |
+|---:|---:|---:|
+| 1889 | 16 | n/a |
+| 1899 | 297 | 178 |
+| 1904 | 1,089 | 428 |
+| 1909 | 2,913 | 1,669 |
+| 1914 | 4,684 | 3,707 |
+| 1919 | 6,647 | 8,965 |
+| 1925 | 9,976 | 15,116 |
+| 1929 | 12,050 | 21,794 |
+| 1939 | 16,011 | 28,816 |
+| 1954 | 19,514 | 74,602 |
 
 ## David 1989 Table 2 TFP Data Used For Appendix Chart
 

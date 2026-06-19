@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">Electric motor capacity in U.S. manufacturing</title>
+<desc id="desc">Line chart showing primary and secondary electric motor capacity in U.S. manufacturing, thousand horsepower, 1889 to 1929.</desc>
+<style>.bg{fill:#f8fafc}.grid{stroke:#d7e1ec;stroke-width:1}.axisline{stroke:#64748b;stroke-width:1.2}.axis{font-family:Inter,system-ui,sans-serif;font-size:12px;fill:#475569}.title{font-family:Inter,system-ui,sans-serif;font-size:23px;font-weight:800;fill:#0f172a}.subtitle{font-family:Inter,system-ui,sans-serif;font-size:13px;fill:#475569}.label{font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:800;fill:#0f172a}.small{font-family:Inter,system-ui,sans-serif;font-size:11px;fill:#475569}.line1{fill:none;stroke:#2563eb;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.line2{fill:none;stroke:#c2410c;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.dot1{fill:#2563eb}.dot2{fill:#c2410c}.shade{fill:#d1fae5;opacity:.45}.note{fill:#fff;stroke:#cbd5e1;stroke-width:1}.call{fill:#ecfdf5;stroke:#5eead4;stroke-width:1}</style>
+<rect width="1000" height="540" class="bg"/>
+<text x="78" y="34" class="title">Electric motor capacity rose sharply by the 1920s</text>
+<text x="78" y="56" class="subtitle">U.S. manufacturing electric motor capacity, thousand horsepower. Primary = utility electricity; secondary = plant-generated electricity.</text>
+<rect x="738.0" y="82" width="220.0" height="378" class="shade"/><line x1="78" y1="460.0" x2="958" y2="460.0" class="grid"/><text x="68" y="465.0" class="axis" text-anchor="end">0k</text>
+<line x1="78" y1="381.3" x2="958" y2="381.3" class="grid"/><text x="68" y="386.3" class="axis" text-anchor="end">5k</text>
+<line x1="78" y1="302.5" x2="958" y2="302.5" class="grid"/><text x="68" y="307.5" class="axis" text-anchor="end">10k</text>
+<line x1="78" y1="223.8" x2="958" y2="223.8" class="grid"/><text x="68" y="228.8" class="axis" text-anchor="end">15k</text>
+<line x1="78" y1="145.0" x2="958" y2="145.0" class="grid"/><text x="68" y="150.0" class="axis" text-anchor="end">20k</text><line x1="78" y1="82" x2="78" y2="460" class="axisline"/><line x1="78" y1="460" x2="958" y2="460" class="axisline"/><text x="78.0" y="484" class="axis" text-anchor="middle">1889</text>
+<text x="298.0" y="484" class="axis" text-anchor="middle">1899</text>
+<text x="408.0" y="484" class="axis" text-anchor="middle">1904</text>
+<text x="518.0" y="484" class="axis" text-anchor="middle">1909</text>
+<text x="628.0" y="484" class="axis" text-anchor="middle">1914</text>
+<text x="738.0" y="484" class="axis" text-anchor="middle">1919</text>
+<text x="870.0" y="484" class="axis" text-anchor="middle">1925</text>
+<text x="958.0" y="484" class="axis" text-anchor="middle">1929</text>
+<path d="M 298.0 457.2 L 408.0 453.3 L 518.0 433.7 L 628.0 401.6 L 738.0 318.8 L 870.0 221.9 L 958.0 116.7" class="line1"/><path d="M 78.0 459.7 L 298.0 455.3 L 408.0 442.8 L 518.0 414.1 L 628.0 386.2 L 738.0 355.3 L 870.0 302.9 L 958.0 270.2" class="line2"/><circle cx="78.0" cy="459.7" r="5" class="dot2"/><circle cx="298.0" cy="457.2" r="5" class="dot1"/><circle cx="298.0" cy="455.3" r="5" class="dot2"/><circle cx="408.0" cy="453.3" r="5" class="dot1"/><circle cx="408.0" cy="442.8" r="5" class="dot2"/><circle cx="518.0" cy="433.7" r="5" class="dot1"/><circle cx="518.0" cy="414.1" r="5" class="dot2"/><circle cx="628.0" cy="401.6" r="5" class="dot1"/><circle cx="628.0" cy="386.2" r="5" class="dot2"/><circle cx="738.0" cy="318.8" r="5" class="dot1"/><circle cx="738.0" cy="355.3" r="5" class="dot2"/><circle cx="870.0" cy="221.9" r="5" class="dot1"/><circle cx="870.0" cy="302.9" r="5" class="dot2"/><circle cx="958.0" cy="116.7" r="5" class="dot1"/><circle cx="958.0" cy="270.2" r="5" class="dot2"/>
+<rect x="96" y="100" width="265" height="58" rx="7" class="note"/><text x="112" y="124" class="label">1889: only 16k hp recorded</text><text x="112" y="143" class="small">and the statistics did not distinguish primary vs secondary.</text>
+<rect x="756" y="100" width="330" height="76" rx="7" class="call"/><text x="772" y="124" class="label">1919 → 1929: both series keep rising</text><text x="772" y="143" class="small">secondary: 6.65M → 12.05M hp</text><text x="772" y="159" class="small">primary: 8.97M → 21.79M hp</text>
+<g transform="translate(96,512)"><line x1="0" y1="0" x2="32" y2="0" class="line1"/><text x="42" y="4" class="small">Primary motors: purchased utility electricity</text><line x1="330" y1="0" x2="362" y2="0" class="line2"/><text x="372" y="4" class="small">Secondary motors: plant-generated electricity</text></g>
+<text x="958" y="512" class="small" text-anchor="end">Source: Devine 1982 Table 5 / DuBoff Table 13</text>
+</svg>

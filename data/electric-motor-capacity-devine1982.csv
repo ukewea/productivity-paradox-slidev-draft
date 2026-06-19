@@ -1,0 +1,11 @@
+year,secondary_motor_hp_thousand,primary_motor_hp_thousand,source_note
+1889,16,,"Devine 1982 Table 5; no primary/secondary distinction in the 1889 statistics"
+1899,297,178,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1904,1089,428,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1909,2913,1669,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1914,4684,3707,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1919,6647,8965,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1925,9976,15116,"Devine 1982 Table 5, drawing on DuBoff Table 13; note year differs from David Table 3 1924 row"
+1929,12050,21794,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1939,16011,28816,"Devine 1982 Table 5, drawing on DuBoff Table 13"
+1954,19514,74602,"Devine 1982 Table 5, drawing on DuBoff Table 13"

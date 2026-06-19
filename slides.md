@@ -460,7 +460,7 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: 電氣化歷程 | why the 1920s | TFP details & caveats | Solow | primary vs. secondary motors | the banking & ATM case | "Computers are not dynamos" (p.360) | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
+<div class="mt-8 text-2xl">Appendix candidates: 電氣化歷程 | why the 1920s | 1880s TFP caveat | secondary motors vs TFP | TFP details & caveats | Solow | primary vs. secondary motors | the banking & ATM case | "Computers are not dynamos" (p.360) | economists disagree | Klarna</div>
 
 ---
 
@@ -580,6 +580,50 @@ Use this only if someone asks for more detail on the productivity chart.
 David's longer 1989 paper reports period-average manufacturing TFP growth. The geometric-weighted Kendrick-based measure is 0.17% per year in 1909-1919 and 5.29% per year in 1919-1929. David 1990 then connects roughly half of the acceleration statistically to the growth of secondary electric motor capacity, while warning that unit drive was not the whole story.
 
 Important caveat: this is not an annual time series. The bars are period averages. Do not read this as exact year-by-year timing; read it as the historical evidence that the 1920s claim is about measured productivity, not a kink in the adoption curve.
+-->
+
+---
+
+<div class="kicker">Appendix · Attribution Caveat</div>
+
+# Backup: not every TFP bar is electrification
+
+<div class="mt-3">
+  <img src="/assets/electrification-secondary-motor-vs-tfp.svg" class="diagram" style="max-height:380px;" />
+</div>
+
+<div class="source">David 1989 Tables 2-3; Field 2007; David 1989 p.26-27 on secondary motor capacity and TFP acceleration. See notes/early-tfp-growth-not-electrification.md and notes/electrification-1920s-tfp-attribution.md.</div>
+
+<!--
+Use this when someone notices that the 1879-1889 TFP bar is not tiny.
+
+Answer: correct, there was real productivity growth before the 1920s. That does not contradict David, because David is not claiming all productivity growth waited for electrification. He is making a narrower electricity-specific claim.
+
+The key number is 1889: factory drive electrified is only about 0.3%. So the 1880s bar is better attributed to the Gilded Age cluster: railroads, telegraphs, modern business enterprise, scale, steel, petroleum refining, meatpacking, cigarettes, and other steam-era / organizational improvements.
+
+The 1920s claim is different: by then factory drive electrified is already over half, secondary motor penetration is rising fast, and David finds a positive cross-industry relationship between secondary motor capacity growth and TFP acceleration.
+-->
+
+---
+
+<div class="kicker">Appendix · Motor Capacity</div>
+
+# Backup: primary vs. secondary electric motors
+
+<div class="mt-3">
+  <img src="/assets/electric-motor-capacity-devine1982.svg" class="diagram" style="max-height:380px;" />
+</div>
+
+<div class="source">Devine 1982 Table 5, drawing on DuBoff Table 13. Raw hp values in data/electric-motor-capacity-devine1982.csv. Primary/secondary are electricity-source categories, not motor technologies.</div>
+
+<!--
+Use this if someone asks what primary and secondary motors mean.
+
+Primary motors: motors driven by electricity purchased from utilities. Secondary motors: motors powered by electricity generated inside the manufacturing establishment.
+
+Important caveat: do not subtract David Table 3 column 2 from column 1 to infer primary motors, because the denominators are different. Column 1 is primary + secondary electric motor horsepower as a share of total mechanical-drive horsepower. Column 2 is secondary motor horsepower as a share of non-electric direct-drive horsepower plus secondary motor horsepower.
+
+Also note that Devine's raw table has 1925, while David Table 3 uses 1924. Do not silently merge those rows without saying the source year differs.
 -->
 
 ---
