@@ -276,7 +276,7 @@ Two separate reasons the numbers lag, and David leans on both: (1) real — the 
 His question: why do general-purpose technologies (electricity, computers… maybe AI) often pay off late?
 </div>
 
-<div class="mt-3 small muted">Long, variable, not guaranteed — lamp 1879 → payoff 1920s · chip 1970 → payoff late 1990s.</div>
+<div class="mt-3 small muted">Long, variable, not guaranteed — visible technology first, measured payoff later.</div>
 
 <div class="source">David 1990, p.355-356.</div>
 
@@ -285,7 +285,7 @@ David's move is not "computers are literally dynamos."
 
 He uses electrification as a historical mirror. Around 1900, the electrical age was visible. Around 1990, the computer age was visible. In both cases, the visible technology was ahead of the measured productivity payoff.
 
-If someone asks why these two moments are being compared: each is a long interval after the enabling breakthrough — but the interval varies and is NOT a fixed clock. Edison and Swan's incandescent lamp and early central stations appear around 1879-1881, yet the factory payoff waits until the 1920s (David: roughly four decades after the first central station). Intel's memory chip and microprocessor appear around 1969-1970; the computer payoff shows up in the late 1990s. Resist any "neat twenty-year rule" — the point is contingency, not a constant.
+If someone asks why these two moments are being compared: each is a long interval after the enabling breakthrough — but the interval varies and is NOT a fixed clock. Edison and Swan's incandescent lamp and early central stations appear around 1879-1881, yet diffusion into factory drive was still only around half by 1919. Intel's memory chip and microprocessor appear around 1969-1970; the computer payoff shows up much later. Resist any "neat twenty-year rule" — the point is lag and contingency, not a constant.
 
 Vocabulary: "general-purpose technology" = a technology that spreads across the whole economy (electricity, the computer, maybe AI); that breadth is why the payoff is slow. And in David's title, "dynamo" = the electric generator, his shorthand for the whole electrification regime.
 -->
@@ -294,20 +294,26 @@ Vocabulary: "general-purpose technology" = a technology that spreads across the 
 
 <div class="kicker">Diffusion Lag</div>
 
-# In 1900, electrification was still early
+# Diffusion is not the payoff
 
-<div class="mt-4">
-  <img src="/assets/electrification-diffusion.svg" class="diagram" />
+<div class="mt-3">
+  <img src="/assets/electrification-diffusion.svg" class="diagram" style="max-height:330px;" />
 </div>
 
-<div class="source">David 1990 p.356; David 1989 Table 3. Lighting note: 3% of all U.S. residences, 8% of urban dwellings in 1899.</div>
+<div class="mt-2 subclaim font-bold">
+This chart proves delay, not productivity. Productivity is a separate claim.
+</div>
+
+<div class="source">David 1990 p.356; David 1989 Table 3. Lighting note in speaker notes.</div>
 
 <!--
 Lead with the punch number: about twenty years after the lightbulb, in 1899, only about 3% of U.S. residences had electric light — 8% even in urban dwellings — and electric motors were less than 5% of factory mechanical drive.
 
 The chart is one line: factory mechanical drive electrified. David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
 
-(Beat, then the lesson — the spine of the talk.) Invention is not diffusion. Diffusion is not redesign. And redesign — rebuilding how the work is done around the tool — is what eventually moves productivity. Hold that word; the next slide is all about it.
+Do not claim the 1920s slope suddenly "surges"; visually, the point is safer and stronger: diffusion was slow. Also do not claim this diffusion chart proves productivity. The chart proves only that electricity took a long time to enter the factory core.
+
+(Beat, then the lesson — the spine of the talk.) Invention is not diffusion. Diffusion is not redesign. Redesign — rebuilding how the work is done around the tool — is what eventually moves productivity. The productivity evidence is a separate claim. For the main talk, keep the mechanism simple: diffusion was slow, and only redesign can turn a technology into measured productivity.
 
 (Appendix / only if asked.) The original table also has a "secondary electric motor" series. In David/DuBoff's usage, primary motors ran on purchased electricity from utilities; secondary motors ran on electricity generated inside the plant. Treat secondary-motor penetration as a proxy for deeper factory electrification and unit-drive diffusion, not as a literal motor type. Q&A material — do not spend main-talk time on it.
 -->
@@ -360,7 +366,7 @@ Centerpiece, part 1. Old factories ran group drive: one big steam engine turned 
 
 <div class="mt-3 subclaim font-bold">Remove the shaft → redesign the floor. The productivity jump comes from the redesign, not the motor.</div>
 
-<div class="mt-2 small muted">Unit drive existed by the 1910s — yet the payoff waited for the 1920s. Why then? →</div>
+<div class="mt-2 small muted">Main line: electrification enabled unit-drive redesign; redesign is what moves productivity.</div>
 
 <div class="source">David 1990 p.357-358 (mechanism), p.359 (TFP decomposition); Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
 
@@ -369,78 +375,40 @@ Centerpiece, part 2 — the side-by-side. Left = group drive (shafts + belts), r
 
 Carry-forward line for the rest of the talk: bolting a motor onto the old shaft is the same move as bolting a chatbot onto an unchanged workflow — you change the engine, not the constraints.
 
-(Bridge.) Unit drive existed by the 1900s-1910s, yet the payoff waited for the 1920s — so why the 1920s? → next slide.
+(Bridge.) The "why exactly the 1920s?" story is good Q&A material: power prices, replacement timing, design know-how, and capital all had to line up. For the main talk, skip that detour and move straight to computers: the pattern repeated.
 
 (Appendix / if asked.) David's 1920s story is not only unit drive: secondary motor capacity explains about half of the 1919-1929 manufacturing TFP acceleration (p.359); continuous-process production, shift-work, instrumentation, process heat also matter.
 -->
 
 ---
 
-<div class="kicker">Why The 1920s?</div>
-
-# The payoff needed several conditions to line up
-
-<div class="grid grid-cols-2 gap-5 mt-10">
-  <div class="box" v-click>
-    <div class="text-2xl font-bold">Cheaper, reliable power</div>
-  </div>
-  <div class="box" v-click>
-    <div class="text-2xl font-bold">A replacement moment</div>
-  </div>
-  <div class="box" v-click>
-    <div class="text-2xl font-bold">Design know-how</div>
-  </div>
-  <div class="box" v-click>
-    <div class="text-2xl font-bold">Capital to build</div>
-  </div>
-</div>
-
-<div class="mt-6 subclaim font-bold">
-This is "historically contingent": the conditions had to line up — and they might not have.
-</div>
-
-<div class="source">David 1990 p.356-358.</div>
-
-<!--
-Why did the payoff become visible in the 1920s? Several conditions lined up — and each has a software parallel, so this is a Monday checklist.
-
-Cheaper, reliable power → the tool got cheap and trustworthy enough to build on (our GPT-4-class moment). Capital replacement moments → we redesign during a rewrite or migration, not mid-flight. Design know-how → someone has to actually learn the new architecture; it is a skill, not a switch. Investment climate → leadership has to fund the redesign.
-
-This is what "historically contingent" means in plain English: the technology did not automatically produce productivity — it needed prices, capital-replacement moments, skills, and macro conditions to align, and they might not have. There was no guarantee; a different macro climate could have deferred the payoff for years (and remember what followed the 1920s). David's argument explicitly allows that the gains arrive much later than hoped, or not on the expected schedule at all. So this is not "be patient, it always pays off" — it is "it pays off only if the conditions align."
--->
-
----
-
 <div class="kicker">35 Years On</div>
 
-# The computer payoff came late — then faded
+# David was mostly right: payoff came late
 
-<div class="grid grid-cols-3 gap-4 mt-8">
-  <div class="metric" style="border-left-color:#64748b;" v-click>
-    <div class="number" style="color:#64748b;font-size:23px;">~1990–95</div>
-    <div class="mt-2 text-2xl font-bold">Everywhere, not in the numbers</div>
-    <div class="mt-2 small">stock <b>+17%/yr</b> · only <b>+¼ pt/yr</b> to growth</div>
+<div class="threecol mt-8">
+  <div class="box" v-click>
+    <div class="text-2xl font-bold text-slate-500">Early 1990s</div>
+    <div class="mt-3 small">Computers everywhere; productivity still weak.</div>
   </div>
-  <div class="metric" v-click>
-    <div class="number" style="font-size:23px;">1996–2004</div>
-    <div class="mt-2 text-2xl font-bold">It landed</div>
-    <div class="mt-2 small">productivity <b>1.6% → 2.7%/yr</b> · IT ≈ <b>half</b></div>
+  <div class="box" style="border-color:#5eead4;" v-click>
+    <div class="text-2xl font-bold text-teal-700">1995–2004</div>
+    <div class="mt-3 small">U.S. productivity accelerated; IT explained a large share.</div>
   </div>
-  <div class="metric" style="border-left-color:#64748b;" v-click>
-    <div class="number" style="color:#64748b;font-size:23px;">2005–2019</div>
-    <div class="mt-2 text-2xl font-bold">Faded</div>
-    <div class="mt-2 small">redesign stalled, not the tech · contingent, not permanent</div>
+  <div class="box" v-click>
+    <div class="text-2xl font-bold text-slate-500">After 2005</div>
+    <div class="mt-3 small">The boom faded; delayed does not mean guaranteed or permanent.</div>
   </div>
 </div>
 
 <div class="mt-7 claim">
-Same shape as the dynamo: huge adoption first, payoff much later. Patience, but not faith.
+Same shape as the dynamo: adoption first, payoff later. Patience, but not faith.
 </div>
 
 <div class="source">Oliner & Sichel 2000 (Table 2; pp.11–12); Jorgenson, Ho & Stiroh 2008; Syverson 2017; BLS.</div>
 
 <!--
-This is the "35 years on" layer David could not see — and the numbers line up with his framework, rather than vindicating a forecast he never made.
+This is the "35 years on" layer. Keep it short in the talk: David was mostly right, but not in the simple "buy computers and productivity rises immediately" way.
 
 The lag, in hard data: through the early 1990s, computer-hardware stock grew ~17%/yr and investment more than quadrupled after 1995, yet computers added only ~¼ point/yr to growth (still a tiny share of the capital stock). Adoption everywhere, payoff missing — David's electrification curve repeated.
 
@@ -455,35 +423,33 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
 
 <div class="kicker">AI Extension</div>
 
-# Most AI today is still bolted on
+# AI: old shaft or redesigned workflow?
 
 <div class="twocol mt-5">
   <div class="box" style="background:#fff7ed;border-color:#fdba74;" v-click>
     <div class="text-2xl font-bold" style="color:#b45309;">Bolt-on (retrofit)</div>
-    <div class="mt-3 small">opencode → faster autocomplete<br/>same repo · PR · review · "done"<br/>real gains · workflow unchanged</div>
-    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. "Done" unchanged.</div>
+    <div class="mt-3 small">opencode helps write / edit / test<br/>same repo · PR · review · "done"</div>
+    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. The work is still shaped the same.</div>
   </div>
   <div class="box" style="background:#ecfdf5;border-color:#5eead4;" v-click>
     <div class="text-2xl font-bold" style="color:#0f766e;">Re-architect (redesign)</div>
-    <div class="mt-3 small">agent owns a ticket end-to-end<br/>tests / CI = the gate<br/>review &amp; accountability redesigned<br/><b>on-prem → private learning loop on your code</b></div>
-    <div class="mt-3 small" style="color:#0f766e;font-weight:700;">Org chart &amp; "done" change → moves the numbers.</div>
+    <div class="mt-3 small">agent owns a small ticket<br/>tests / CI = the gate<br/>humans review requirements, risk, responsibility</div>
+    <div class="mt-3 small" style="color:#0f766e;font-weight:700;">"Done" changes. Accountability changes.</div>
   </div>
 </div>
 
 <div class="mt-4 claim">Self-check (not a scorecard): has it changed our org chart or our "definition of done" yet?</div>
 
-<div class="mt-2 small muted"><i>From inside, you can't tell yet: Klarna rebuilt around AI in 2024 → re-hired humans in 2025.</i></div>
-
-<div class="source">Brynjolfsson, Li &amp; Raymond 2023 (NBER w31161); Klarna 2024–25 (company/press). Lens, not prophecy — David 1990 p.360: "Computers are not dynamos."</div>
+<div class="source">AI analogy as a design question, not a forecast. Q&A: task-level evidence, private learning loops, Klarna. David 1990 p.360: "Computers are not dynamos."</div>
 
 <!--
 Now apply the lens to AI. Put a sharp claim on the table — as a provocation, not a verdict, because we are standing inside the transition and cannot yet measure it.
 
-Make it about us — gently; this is a sharing, not a report card. We run opencode against our own on-prem model, and like almost everyone right now, we're mostly in the bolt-on phase: the agent writes and edits code faster, but it still flows through the same repo, pull request, review, and definition of "done." That's real, useful, and exactly where you'd expect to start — the 1920s factory first just swapped the engine too. It's step one, not a mistake. The point isn't that we're doing it wrong; it's that there's a further step worth getting excited about.
+Make it about us — gently; this is a sharing, not a report card. We run opencode against our own on-prem model, and like almost everyone right now, we're mostly in the bolt-on phase: the agent writes and edits code faster, but it still flows through the same repo, pull request, review, and definition of "done." That's real, useful, and exactly where you'd expect to start. It's step one, not a mistake. The point isn't that we're doing it wrong; it's that there's a further step worth getting excited about.
 
 But honor David's caution: from inside a transition you genuinely cannot tell early redesign from retrofit — the 1917 photo of motors-on-every-machine looked like nothing in the aggregate at the time. So "most AI is bolt-on" is a question to hold against your own work, not a confident diagnosis. It does not prove AI has failed, and it does not prove it will succeed. The evidence today is strongest at the task or firm level — real, measured gains in specific writing and customer-support settings. What we cannot yet say, in 2026, is that AI has caused a durable, economy-wide productivity regime change.
 
-So: what would AI's re-architect moment look like for us? Concrete candidates to argue about — (1) the agent owns a ticket end-to-end, not a snippet a human stitches in; (2) our tests and CI become the gate the agent must pass — tests as the source of truth; (3) review gates and accountability get redesigned — who reviews an agent's PR, and who is on the hook when its code ships? That is an org-chart change, not a tooling change; (4) pipelines designed assuming a probabilistic component (retries, verification, fallback), not a deterministic one bolted in. And (5) the one our on-prem setup uniquely enables: a private learning loop — capture our own code and review traces, build private evals on our codebase, even tune the local model on our repo, so it gets better at our system over time. A SaaS Copilot can't give you that; an in-house model can. (This is exactly Nadella's "own your learning loop" point — see Q&A.)
+So: what would AI's re-architect moment look like for us? Keep only one strong contrast in the main talk — bolt-on AI means the old PR/review/done workflow stays intact; redesigned AI means the agent can own a bounded ticket, tests and CI become the gate, and humans move up to requirements, risk, and accountability. Save private learning loops, evals, tuning, and Klarna for Q&A.
 
 One concrete shape of the re-architect version: a support org that does not just drop a bot beside its agents, but rebuilds the whole tier-one queue around an AI agent — defined escalation paths, a measured deflection rate, humans re-scoped to handle only what the agent hands up. That is a workflow-and-org redesign, not a tool bolted on. Most "we added an AI assistant" projects are not that.
 
@@ -540,7 +506,62 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | Nadella's "learning loop" (a vendor's take on the redesign)</div>
+<div class="mt-8 text-2xl">Appendix candidates: why the 1920s | TFP surge chart | TFP 101 | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
+
+---
+
+<div class="kicker">Appendix · Why The 1920s?</div>
+
+# The payoff needed several conditions to line up
+
+<div class="grid grid-cols-2 gap-5 mt-10">
+  <div class="box">
+    <div class="text-2xl font-bold">Cheaper, reliable power</div>
+  </div>
+  <div class="box">
+    <div class="text-2xl font-bold">A replacement moment</div>
+  </div>
+  <div class="box">
+    <div class="text-2xl font-bold">Design know-how</div>
+  </div>
+  <div class="box">
+    <div class="text-2xl font-bold">Capital to build</div>
+  </div>
+</div>
+
+<div class="mt-6 subclaim font-bold">
+This is "historically contingent": the conditions had to line up — and they might not have.
+</div>
+
+<div class="source">David 1990 p.356-358.</div>
+
+<!--
+Why did the payoff become visible in the 1920s? Several conditions lined up — and each has a software parallel, so this is good Q&A material.
+
+Cheaper, reliable power → the tool got cheap and trustworthy enough to build on (our GPT-4-class moment). Capital replacement moments → we redesign during a rewrite or migration, not mid-flight. Design know-how → someone has to actually learn the new architecture; it is a skill, not a switch. Investment climate → leadership has to fund the redesign.
+
+This is what "historically contingent" means in plain English: the technology did not automatically produce productivity — it needed prices, capital-replacement moments, skills, and macro conditions to align, and they might not have. There was no guarantee; a different macro climate could have deferred the payoff for years. Use this only if someone asks why the payoff appeared in the 1920s specifically.
+-->
+
+---
+
+<div class="kicker">Appendix · Productivity Evidence</div>
+
+# Backup: the TFP surge is visible in the 1920s
+
+<div class="mt-4">
+  <img src="/assets/manufacturing-tfp-electrification-era.svg" class="diagram" style="max-height:360px;" />
+</div>
+
+<div class="source">David 1989, "Computer and Dynamo," Table 2, Kendrick-based U.S. manufacturing TFP growth rates, geometric weighting. See also David 1990 p.359.</div>
+
+<!--
+Use this only if someone asks: "If the diffusion curve doesn't prove productivity, where is the productivity evidence?"
+
+Answer: not in the diffusion curve. David's longer 1989 paper reports period-average manufacturing TFP growth. The geometric-weighted Kendrick-based measure is 0.17% per year in 1909-1919 and 5.29% per year in 1919-1929. That is the productivity surge. David 1990 then connects roughly half of the acceleration statistically to the growth of secondary electric motor capacity, while warning that unit drive was not the whole story.
+
+Important caveat: this is not an annual time series. The bars are period averages. Do not read this as exact year-by-year timing; read it as the historical evidence that the 1920s claim is about measured productivity, not a kink in the adoption curve.
+-->
 
 ---
 
@@ -561,7 +582,7 @@ layout: end
 
 <div class="mt-5 subclaim font-bold">1900 and 1990 are paired vantage points, not paired payoffs.</div>
 
-<div class="source">David 1990 p.355-356. Pearl Street: IEEE ETHW. The ~two-decade vantage is rhetorical symmetry, not a fixed lag.</div>
+<div class="source">David 1990 p.355-356; Pearl Street: IEEE ETHW. Rhetorical symmetry, not a fixed lag.</div>
 
 ---
 
@@ -678,5 +699,3 @@ Paperless office: e-signatures had no legal force until UETA 1999 / ESIGN 2000, 
 <!--
 (Backup, if asked — the cleanest modern instance.) David's real target was the computer paradox, and banking is where you can watch it. Wave 1 (back office, 1960s–70s): records digitized, but you still visit the branch — tellers ≈ unchanged. Wave 2 (ATM): cut tellers per branch (~20→13), but cheaper branches → ~40% more branches → total tellers ROSE (~300k→600k). The machine expected to kill the teller grew the teller. Wave 3 (mobile, 2010s): the bank moves into your phone; branches become a cost not a weapon → closures (peak 2009) → tellers fall to mid-300k. The tool made the old model cheaper; only the new model changed the jobs. (Honest caveat: post-2008 mergers and falling cash use also drove closures.)
 -->
-
-

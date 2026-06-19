@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
   <title id="title">U.S. factory electrification diffusion, 1879 to 1929</title>
-  <desc id="desc">Line chart showing factory mechanical drive electrification near zero for two decades after the 1879-81 enabling invention, rising past fifty percent only around 1919, with the productivity payoff arriving in the 1920s. The lag from invention to payoff is roughly four decades.</desc>
+  <desc id="desc">Line chart showing factory mechanical drive electrification near zero for two decades after the 1879-81 enabling invention, rising past fifty percent only around 1919. The chart shows diffusion lag, not productivity payoff.</desc>
   <defs>
     <marker id="brk" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M5 0L5 10" stroke="#b45309" stroke-width="2"/></marker>
     <style>
@@ -19,13 +19,8 @@
     </style>
   </defs>
   <rect class="bg" width="1200" height="560"/>
-  <text class="title" x="70" y="42">Adoption was slow — and the payoff came decades later</text>
+  <text class="title" x="70" y="42">Factory electrification diffused slowly</text>
   <text class="small" x="70" y="68">Factory mechanical drive electrified, U.S. manufacturing</text>
-
-  <!-- payoff zone band (1920-1929) -->
-  <rect x="911" y="190" width="169" height="240" fill="#ecfdf5" stroke="#99f6e4"/>
-  <text class="small" x="921" y="210" fill="#0f766e" font-weight="700">1920s:</text>
-  <text class="small" x="921" y="228" fill="#0f766e" font-weight="700">payoff</text>
 
   <!-- axes -->
   <line class="axis" x1="140" y1="430" x2="1080" y2="430"/>
@@ -81,9 +76,9 @@
     <circle cx="1080" cy="196" r="7"/>
   </g>
 
-  <!-- lag bracket: invention -> payoff -->
-  <line x1="152" y1="158" x2="965" y2="158" stroke="#b45309" stroke-width="2.5" marker-start="url(#brk)" marker-end="url(#brk)"/>
-  <text class="warn" x="300" y="150">lamp 1879 → factory payoff 1920s ≈ four decades — long &amp; variable, not a fixed clock</text>
+  <!-- lag bracket: invention -> 50% factory electrification -->
+  <line x1="152" y1="158" x2="892" y2="158" stroke="#b45309" stroke-width="2.5" marker-start="url(#brk)" marker-end="url(#brk)"/>
+  <text class="warn" x="292" y="150">1879–81 → ~50% factory drive electrified only around 1919</text>
 
   <!-- <5% callout -->
   <rect x="360" y="332" width="232" height="74" rx="8" fill="#fff7ed" stroke="#fdba74"/>

@@ -55,6 +55,28 @@
 | 1924 | 67.1% | 45.0% |
 | 1929 | 78.4% | 56.4% |
 
+## David 1989 Table 2 TFP Data Used For Appendix Chart
+
+- Source: Paul A. David, "Computer and Dynamo: The Modern Productivity Paradox in a Not-Too-Distant Mirror," Warwick Economic Research Paper No. 339, 1989, Table 2.
+- Data file in this repo: `data/manufacturing-tfp-david1989.csv`.
+- Chart asset in this repo: `assets/manufacturing-tfp-electrification-era.svg`.
+- Measure used: Kendrick-based U.S. manufacturing total factor productivity growth rate, geometric weighting (`Ag` in David's Table 2).
+- These are period-average annual growth rates, not annual observations.
+
+| Period | Manufacturing TFP growth, %/yr |
+|---|---:|
+| 1869-1879 | 0.31 |
+| 1879-1889 | 1.23 |
+| 1889-1899 | 0.86 |
+| 1899-1909 | 0.50 |
+| 1909-1919 | 0.17 |
+| 1919-1929 | 5.29 |
+| 1929-1937 | 1.96 |
+| 1937-1948 | 1.56 |
+
+- Talk-safe interpretation: the diffusion curve proves slow adoption; this TFP chart is the backup evidence for the measured productivity surge.
+- David 1990 p.359 links roughly half of the 1919-1929 TFP acceleration, relative to 1909-1919, to growth in secondary electric motor capacity. Keep the "roughly half" wording and do not imply electrification explains the entire 1920s productivity surge.
+
 ## Image Sources
 
 - `assets/line-shaft.jpg`: Wikimedia Commons `File:Line shaft.jpg`, sourced from Library of Congress / HAER CA-179-45. Public domain as U.S. National Park Service / HAER work. <https://commons.wikimedia.org/wiki/File:Line_shaft.jpg>
