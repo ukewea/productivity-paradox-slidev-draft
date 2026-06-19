@@ -215,37 +215,6 @@ Why new technologies often pay off late
 The paper is Paul David's "The Dynamo and the Computer." The main story is not AI. It is a historical puzzle about computers, and David's way of using electrification to understand it.
 
 That gap — visible everywhere, invisible in the numbers — is the productivity paradox. Near the end I will come back to AI; the foundation is the older paradox: computers were everywhere, yet the productivity statistics looked disappointing.
--->
-
----
-
-<div class="kicker">Productivity Paradox</div>
-
-# A tool can feel useful before the team gets faster
-
-<div class="mt-14 claim text-3xl text-center">
-Individual value first. <span class="text-teal-700">System payoff</span> later.
-</div>
-
-<div class="threecol mt-14 text-center">
-  <div class="soft" v-click>
-    <div class="text-2xl font-bold">People use it</div>
-  </div>
-  <div class="soft" v-click>
-    <div class="text-2xl font-bold">Workflow stays the same</div>
-  </div>
-  <div class="soft" v-click>
-    <div class="text-2xl font-bold">Team payoff unclear</div>
-  </div>
-</div>
-
-<div class="source">Frame as a system-level puzzle, not a verdict on whether the tool is useful.</div>
-
-<!--
-Do not turn this into "is AI useful?" That is not the sharing goal.
-
-The tension is softer and more observational: a tool can feel valuable at the individual task level before it visibly changes team delivery, sector output, or measured productivity. That gap is the productivity paradox.
-
 Use a concrete engineering example only to make the idea intuitive: everyone may use an assistant daily, but the sprint, review flow, or definition of done may not yet look different. That does not prove failure. It means system-level payoff is a separate thing to watch.
 -->
 
@@ -303,7 +272,7 @@ The chart is one line: factory mechanical drive electrified. David says these ag
 
 The main point is what the chart CAN prove: adoption itself was slow. Do not use this chart as productivity evidence.
 
-(Bridge.) So far we have only shown the first lag: invention did not immediately become core factory adoption. The next question is separate: did measured productivity later jump? That is what the TFP chart handles.
+(Bridge.) So far we have only shown the first lag: visible electrification did not immediately become core factory adoption. The next question is separate: did measured productivity later jump? That is what the TFP chart handles.
 
 (Q&A only.) If someone challenges the slope, say the 1920s claim is not about an adoption-curve kink; it is about measured productivity.
 
@@ -320,14 +289,18 @@ The main point is what the chart CAN prove: adoption itself was slow. Do not use
   <img src="/assets/manufacturing-tfp-electrification-era.svg" class="diagram" style="max-height:350px;" />
 </div>
 
-<div class="mt-2 subclaim font-bold">TFP ≈ overall production efficiency after accounting for inputs.</div>
+<div class="mt-2 subclaim font-bold">The bars are growth rates: how fast overall production efficiency improved.</div>
 
-<div class="source">David 1989, "Computer and Dynamo," Table 2, Kendrick-based U.S. manufacturing TFP growth rates, geometric weighting. See also David 1990 p.359.</div>
+<div class="source">David 1989 Table 2; David 1990 p.359. Period-average annual TFP growth rates.</div>
 
 <!--
 Keep this simple. This is not a TFP lecture.
 
-Say: diffusion was only adoption evidence. This slide is the productivity evidence. David's longer 1989 paper reports period-average manufacturing TFP growth. You can roughly treat TFP as production efficiency after accounting for inputs. The key contrast is 1909-1919 at about 0.17% per year versus 1919-1929 at about 5.29% per year.
+Say: diffusion was only adoption evidence. This slide is the productivity evidence.
+
+Talk-safe wording: TFP is the level of overall production efficiency after accounting for inputs. This chart is not that level; it is the average annual growth rate of that efficiency level. So the clean line is not "TFP exploded in one year." It is: manufacturing productivity growth accelerated sharply in the 1920s.
+
+The key contrast is 1909-1919 at about 0.17% per year versus 1919-1929 at about 5.29% per year.
 
 Then bridge: now that we have evidence of adoption lag and later productivity jump, the real question is mechanism — what can turn a new technology into a new production system?
 -->
@@ -351,20 +324,18 @@ Then bridge: now that we have evidence of adoption lag and later productivity ju
   </div>
 </div>
 
-<div class="mt-3 subclaim font-bold">New tool, old playbook. The bigger change comes when production is rearranged around the tool.</div>
+<div class="mt-3 subclaim font-bold">Remove the shaft → machines can follow workflow, not the other way around.</div>
 
-<div class="mt-2 small muted">中文 punchline: 新馬達，舊軸心；新工具，舊打法。</div>
-
-<div class="source">David 1990 p.357-358 (mechanism), p.359 (TFP decomposition); Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
+<div class="source">David 1990 p.357-359; Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
 
 <!--
-Keep this to 45-60 seconds. Do not teach the mechanics of group drive and unit drive.
+Keep this to 45-60 seconds.
 
-Use the metaphor: early electrification could mean a new motor attached to the same old shaft. That is not useless; it is the first stage. But it is still "new motor, old shaft" — or in Chinese, 新工具，舊打法.
+Start with the photo, not the terminology. Say: old factories used a long overhead shaft and belts to power machines. Early electrification could mean putting a new motor onto that same old shaft. That is not useless; it is the first stage. But it is still "new motor, old shaft" — or in Chinese, 新工具，舊打法.
 
-The larger productivity story appears when old constraints can be removed and production can be rearranged around the new tool. Treat this as an illustrative mechanism, not as the single cause of the whole 1920s TFP surge.
+David's advantages of unit drive: not just less fuel and less friction; lighter factory structures, single-story layouts, better materials handling, easier reconfiguration, less downtime during maintenance or line rearrangement, better machine control, and cleaner/safer shops. Pick only two or three in the main talk.
 
-Carry-forward line for the rest of the talk: a new tool can first speed up yesterday's playbook; the historically interesting question is whether production later reorganizes around it.
+Treat this as an illustrative mechanism, not as the single cause of the whole 1920s TFP surge.
 
 (Bridge.) The "why exactly the 1920s?" story is good Q&A material: power prices, replacement timing, design know-how, and capital all had to line up. For the main talk, skip that detour and move straight to computers: the pattern repeated.
 
@@ -393,7 +364,7 @@ Carry-forward line for the rest of the talk: a new tool can first speed up yeste
 </div>
 
 <div class="mt-7 claim">
-Same shape as the dynamo: adoption first, payoff later. Patience, but not faith.
+Same shape as the dynamo: adoption first, payoff later.
 </div>
 
 <div class="source">Oliner & Sichel 2000 (Table 2; pp.11–12); Jorgenson, Ho & Stiroh 2008; Syverson 2017; BLS.</div>
@@ -429,12 +400,12 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
   </div>
 </div>
 
-<div class="mt-4 claim">A lens for watching the next few years: which sectors reorganize production around AI?</div>
+<div class="mt-4 claim">A frame for watching the next few years: which sectors reorganize production around AI?</div>
 
-<div class="source">AI analogy as an observation lens, not a forecast. Q&A: task-level evidence, private learning loops, Klarna. David 1990 p.360: "Computers are not dynamos."</div>
+<div class="source">AI analogy as an observation frame, not a forecast. Q&A: task-level evidence, private learning loops, Klarna. David 1990 p.360: "Computers are not dynamos."</div>
 
 <!--
-Now apply the lens to AI. Keep the tone observational, not evangelical and not skeptical-for-skepticism's-sake. The point is not to debate whether AI is useful. The point is to watch whether AI changes how different sectors produce.
+Now apply this frame to AI. Keep the tone observational, not evangelical and not skeptical-for-skepticism's-sake. The point is not to debate whether AI is useful. The point is to watch whether AI changes how different sectors produce.
 
 Use the engineering workflow only as an example, not as the thesis. For example: opencode can help write, edit, and test code while the repo, PR, review, and definition of "done" remain mostly the same. That is real value, and it may be an early "new tool, old playbook" phase.
 
@@ -470,10 +441,6 @@ Main close for this slide: David does not tell us AI will definitely boom. He gi
 Big technologies often diffuse first, reorganize production later, and only then show up clearly in productivity.
 </div>
 
-<div class="quote mt-7">
-New tools, old playbooks —<br/>
-or new ways to produce?
-</div>
 
 <div class="source">Closing thesis: analogy as a thinking tool, not a forecast.</div>
 
@@ -493,7 +460,72 @@ layout: end
 
 # Q&A
 
-<div class="mt-8 text-2xl">Appendix candidates: why the 1920s | TFP details & caveats | Solow | electrification timeline (primary vs. secondary motors, p.359) | the banking & ATM case | "Computers are not dynamos" (p.360) | Why info systems never wear out | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
+<div class="mt-8 text-2xl">Appendix candidates: 電氣化歷程 | why the 1920s | TFP details & caveats | Solow | primary vs. secondary motors | the banking & ATM case | "Computers are not dynamos" (p.360) | how economists disagree (Acemoglu ↔ Goldman) | private learning loops / Nadella | Klarna</div>
+
+---
+
+<div class="kicker">Appendix · 電氣化歷程</div>
+
+# Backup: 電氣化時間線
+
+<div class="grid grid-cols-4 gap-3 mt-5">
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1879</div>
+    <div class="mt-2 font-bold">實用白熾燈</div>
+    <div class="mt-2 muted">電氣化開始變得可見。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1882</div>
+    <div class="mt-2 font-bold">中央電站</div>
+    <div class="mt-2 muted">Holborn / Pearl Street: 電開始變成基礎設施。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1896</div>
+    <div class="mt-2 font-bold">AC 輸電</div>
+    <div class="mt-2 muted">Niagara → Buffalo, 遠距離供電變實際。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1899</div>
+    <div class="mt-2 font-bold">工廠動力用電 &lt;5%</div>
+    <div class="mt-2 muted">進入工廠核心非常慢。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1919</div>
+    <div class="mt-2 font-bold">大約過半</div>
+    <div class="mt-2 muted">David 表中約 53.1%。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1920s</div>
+    <div class="mt-2 font-bold">productivity payoff</div>
+    <div class="mt-2 muted">製造業生產力成長明顯加速。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1929</div>
+    <div class="mt-2 font-bold">接近 80%</div>
+    <div class="mt-2 muted">David 表中約 78.4%。</div>
+  </div>
+  <div class="box tiny">
+    <div class="text-2xl font-bold text-teal-700">1935–60</div>
+    <div class="mt-2 font-bold">農村補完</div>
+    <div class="mt-2 muted">REA 之後,農場用電到 1960 左右接近普及。</div>
+  </div>
+</div>
+
+<div class="mt-4 subclaim font-bold">
+口語重點: 電氣化不是單一事件,而是從 device → infrastructure → factory redesign → broad diffusion 的長過程。
+</div>
+
+<div class="source">Fact-check: David 1990 p.356-359; David 1989 Table 3; notes/background-industrial-revolutions.md; Pearl Street: IEEE ETHW.</div>
+
+<!--
+Use this if someone asks about 1879, 1882, or whether the timeline matches the main diffusion chart.
+
+Short answer: yes, it matches. The main deck uses 1879/early 1880s as the visible beginning of electrification, then David's factory-drive diffusion numbers: 1899 less than 5%, 1919 about half, 1929 close to 80%.
+
+Do not make 1920s about an adoption-curve kink. The 1920s point is the measured productivity payoff, supported by the manufacturing TFP growth chart. The diffusion chart and TFP chart answer two different questions.
+
+Background-industrial-revolutions.md adds useful context: the full electrification arc is longer than factory electrification. It runs from lamps and central stations, through AC and the grid, then factory redesign, then household/rural diffusion. Use that only in Q&A so the main story does not become a general industrial-revolutions lecture.
+-->
 
 ---
 

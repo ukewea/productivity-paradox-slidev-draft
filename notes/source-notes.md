@@ -22,7 +22,9 @@
 - The factory productivity mechanism runs through electric motors, factory electrification, and especially the shift from `group drive` to `unit drive`.
 - The phrase "dynamos everywhere but in productivity statistics" is David's rhetorical counterfactual, not a famous 1900 quote.
 - TFP/MFP is not a clean direct measurement of "technology." It is a residual-like productivity measure that can include measurement error, organization, scale effects, and uncounted inputs.
-- Do not say David proved AI will succeed. The paper provides a lens and historical analogy, not a prophecy.
+- For talk wording, distinguish the TFP level from the charted TFP growth rate. The main chart is period-average annual growth of manufacturing TFP, so the safe line is "productivity growth accelerated sharply in the 1920s." It is acceptable colloquially to say "生產力大爆發" if immediately framed as faster growth, not a one-year jump in the TFP level.
+- For Q&A timeline wording, `background-industrial-revolutions.md` is useful for the broader electrification arc: 1879 lamp/device, 1882 central stations/infrastructure, 1890s AC and long-distance transmission, factory electric drive and unit-drive redesign, and later household/rural diffusion. Keep this broader arc in Q&A; the main deck should stay focused on factory adoption plus manufacturing productivity.
+- Do not say David proved AI will succeed. The paper provides an observation frame and historical analogy, not a prophecy.
 - Do not say Paul David did not live to see the later computer productivity story. He died in 2023.
 - Use cautious wording for AI: task-level and some firm-level gains exist, but aggregate productivity causality is still early and contested in 2026.
 
