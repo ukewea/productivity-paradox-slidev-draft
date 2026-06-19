@@ -228,13 +228,13 @@ Real value — <span class="text-teal-700">not yet</span> real productivity.
 </div>
 
 <div class="threecol mt-14 text-center">
-  <div class="soft">
+  <div class="soft" v-click>
     <div class="text-2xl font-bold">Tools show up</div>
   </div>
-  <div class="soft">
+  <div class="soft" v-click>
     <div class="text-2xl font-bold">Numbers lag</div>
   </div>
-  <div class="soft">
+  <div class="soft" v-click>
     <div class="text-2xl font-bold">Why? — unclear</div>
   </div>
 </div>
@@ -263,12 +263,12 @@ Two separate reasons the numbers lag, and David leans on both: (1) real — the 
   <div class="soft">
     <div class="text-5xl font-bold text-teal-700">1900</div>
     <div class="mt-3 text-2xl font-bold">Electrical Age</div>
-    <div class="mt-3 small">Electric light, generation, transmission, and motors were visible, but the productivity payoff had not fully arrived.</div>
+    <div class="mt-3 small">Light · motors · generators — everywhere. Payoff: not yet.</div>
   </div>
   <div class="soft">
     <div class="text-5xl font-bold text-blue-700">1990</div>
     <div class="mt-3 text-2xl font-bold">Computer Age</div>
-    <div class="mt-3 small">Microprocessors and early business computers were spreading, but the productivity statistics still looked disappointing.</div>
+    <div class="mt-3 small">Microprocessors · business computers — everywhere. Numbers: still flat.</div>
   </div>
 </div>
 
@@ -276,7 +276,7 @@ Two separate reasons the numbers lag, and David leans on both: (1) real — the 
 His question: why do general-purpose technologies (electricity, computers… maybe AI) often pay off late?
 </div>
 
-<div class="mt-3 small muted">The lag is long and variable — and not guaranteed: lamp 1879 → factory payoff 1920s (~40 yrs); microchip 1970 → computer payoff late 1990s. It arrives only if the conditions align.</div>
+<div class="mt-3 small muted">Long, variable, not guaranteed — lamp 1879 → payoff 1920s · chip 1970 → payoff late 1990s.</div>
 
 <div class="source">David 1990, p.355-356.</div>
 
@@ -314,11 +314,38 @@ The chart is one line: factory mechanical drive electrified. David says these ag
 
 ---
 
-<div class="kicker">Mechanism</div>
+<div class="kicker">Mechanism · 1 of 2</div>
 
-# The key mechanism: retrofit is not redesign
+# Group drive: one shaft drives the whole floor
 
-<div class="photo-pair">
+<div class="photo-pair mt-2">
+  <div class="photo-panel">
+    <img src="/assets/kammgarnspinnerei-pfaffendorf-1925.jpg" style="object-position:50% 40%;" />
+    <div class="label">The real thing (1925)</div>
+    <div class="caption">Kammgarnspinnerei Pfaffendorf, Leipzig.</div>
+  </div>
+  <div class="photo-panel">
+    <img src="/assets/line-shaft-group-drive.svg" style="object-fit:contain;filter:none;background:#fff;" />
+    <div class="label">Same idea, simplified</div>
+    <div class="caption">Even with an electric motor: one motor → shaft → belts → every machine</div>
+  </div>
+</div>
+
+<div class="mt-3 subclaim font-bold">Swap the steam engine for a motor on the same shaft → barely helps. The constraint is the shaft, not the engine.</div>
+
+<div class="source">David 1990 p.357-358; Devine 1983. Photo: user-provided Pfaffendorf image. Schematic: Claude.</div>
+
+<!--
+Centerpiece, part 1. Old factories ran group drive: one big steam engine turned a long overhead line shaft, and belts dropped power to each machine — every machine chained to that one spinning shaft. The historical photo (left) is hard to parse, so I had Claude draw the simplified schematic (right). The point the schematic makes: even if you swap the steam engine for an ELECTRIC MOTOR, as long as it still drives the same shaft, it is STILL group drive — and it barely helps. The constraint was never the engine; it was the shaft: the whole line spins all day even for one machine (friction/waste), machines must sit in a row near the shaft (not by workflow), they can't run at independent speeds, and one breakdown stops everyone.
+-->
+
+---
+
+<div class="kicker">Mechanism · 2 of 2</div>
+
+# Retrofit vs redesign: group drive → unit drive
+
+<div class="photo-pair mt-2">
   <div class="photo-panel">
     <img src="/assets/kammgarnspinnerei-pfaffendorf-1925.jpg" style="object-position:50% 40%;" />
     <div class="label">Group drive: shafts + belts</div>
@@ -327,30 +354,24 @@ The chart is one line: factory mechanical drive electrified. David says these ag
   <div class="photo-panel">
     <img src="/assets/marconi-individual-driving-motors.jpg" style="object-position:50% 48%;" />
     <div class="label">Unit drive: motors at machines</div>
-    <div class="caption">Screw-machine department with individual driving motors, Marconi, 1917-18.</div>
+    <div class="caption">Screw-machine dept. with individual driving motors, Marconi, 1917-18.</div>
   </div>
 </div>
 
-<div class="mt-3 subclaim font-bold">
-The constraint was the shaft, not the engine: the payoff came from removing the shaft, not from the new motor.
-</div>
+<div class="mt-3 subclaim font-bold">Remove the shaft → redesign the floor. The productivity jump comes from the redesign, not the motor.</div>
 
 <div class="mt-2 small muted">Unit drive existed by the 1910s — yet the payoff waited for the 1920s. Why then? →</div>
 
 <div class="source">David 1990 p.357-358 (mechanism), p.359 (TFP decomposition); Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
 
 <!--
-This is the most important slide. If they remember one idea, this is it.
+Centerpiece, part 2 — the side-by-side. Left = group drive (shafts + belts), right = unit drive (a motor on each machine). The point: once you remove the shaft, you can redesign the whole floor — machines run on demand, laid out by workflow, independent speeds, isolated breakdowns, single-story plants with cranes and daylight. Productivity jumps from the REDESIGN the motor allowed, not from the motor itself. (Marconi photo is 1917-18 — unit drive beginning to appear, not the whole 1920s story.)
 
-In old factories one big steam engine turned a long overhead shaft, and belts dropped power to each machine — every machine chained to that one spinning shaft. When electricity arrived, the obvious move was to swap the steam engine for a big electric motor on the same shaft — and it barely helped. The constraint was never the engine; it was the shaft: the whole line spins all day even for one machine (friction/waste), machines must sit in a row near the shaft (not by workflow), they can't run at independent speeds, and one breakdown stops everyone. New power source, same constraints.
+Carry-forward line for the rest of the talk: bolting a motor onto the old shaft is the same move as bolting a chatbot onto an unchanged workflow — you change the engine, not the constraints.
 
-Unit drive threw the shaft away: a motor on each machine, fed by wire. Now a machine runs only when needed; the floor can be laid out by how the work flows; each runs at its own speed; breakdowns are isolated; and with nothing overhead you get single-story plants, cranes, daylight, clean safe floors. The productivity came from the redesign the motor finally allowed — not from the motor. Same move in our world: bolting a chatbot onto an unchanged workflow changes the engine, not the constraints.
+(Bridge.) Unit drive existed by the 1900s-1910s, yet the payoff waited for the 1920s — so why the 1920s? → next slide.
 
-The photo on the right is a Marconi screw-machine department whose archival caption explicitly notes individual driving motors. Caveat: it is from 1917-18, so use it as a concrete visual of unit drive beginning to appear, not as the entire 1920s diffusion story.
-
-(Appendix / only if asked.) David's 1920s story is not only unit drive. Secondary motor capacity statistically explains about half of the 1919-1929 manufacturing TFP acceleration (p.359); continuous-process production, shift-work, electrical instrumentation, and process heat also matter. Keep for Q&A — it muddies the cleanest idea in the talk.
-
-(Bridge into the next slide.) Notice the timing puzzle: unit drive existed already in the 1900s-1910s — the Marconi photo is 1917 — yet the productivity payoff did not really land until the 1920s. The technology was available before the payoff arrived. So why the 1920s? That is the next slide.
+(Appendix / if asked.) David's 1920s story is not only unit drive: secondary motor capacity explains about half of the 1919-1929 manufacturing TFP acceleration (p.359); continuous-process production, shift-work, instrumentation, process heat also matter.
 -->
 
 ---
@@ -359,22 +380,18 @@ The photo on the right is a Marconi screw-machine department whose archival capt
 
 # The payoff needed several conditions to line up
 
-<div class="grid grid-cols-2 gap-5 mt-8">
-  <div class="box">
+<div class="grid grid-cols-2 gap-5 mt-10">
+  <div class="box" v-click>
     <div class="text-2xl font-bold">Cheaper, reliable power</div>
-    <div class="mt-3 small">After 1914-17, electricity rates fell relative to the general price level.</div>
   </div>
-  <div class="box">
-    <div class="text-2xl font-bold">Capital replacement moments</div>
-    <div class="mt-3 small">Old plants had to depreciate, become obsolete, or be replaced during expansion.</div>
+  <div class="box" v-click>
+    <div class="text-2xl font-bold">A replacement moment</div>
   </div>
-  <div class="box">
+  <div class="box" v-click>
     <div class="text-2xl font-bold">Design know-how</div>
-    <div class="mt-3 small">Architects and engineers had to learn how to build around electric drive.</div>
   </div>
-  <div class="box">
-    <div class="text-2xl font-bold">Investment climate</div>
-    <div class="mt-3 small">The 1920s fixed-capital boom created more chances to build new plants.</div>
+  <div class="box" v-click>
+    <div class="text-2xl font-bold">Capital to build</div>
   </div>
 </div>
 
@@ -399,20 +416,20 @@ This is what "historically contingent" means in plain English: the technology di
 # The computer payoff came late — then faded
 
 <div class="grid grid-cols-3 gap-4 mt-8">
-  <div class="metric" style="border-left-color:#64748b;">
+  <div class="metric" style="border-left-color:#64748b;" v-click>
     <div class="number" style="color:#64748b;font-size:23px;">~1990–95</div>
     <div class="mt-2 text-2xl font-bold">Everywhere, not in the numbers</div>
-    <div class="mt-2 small">Computer stock grew <b>~17%/yr</b>, investment <b>4×</b> after 1995 — yet only <b>+¼ pt/yr</b> to growth.</div>
+    <div class="mt-2 small">stock <b>+17%/yr</b> · only <b>+¼ pt/yr</b> to growth</div>
   </div>
-  <div class="metric">
+  <div class="metric" v-click>
     <div class="number" style="font-size:23px;">1996–2004</div>
     <div class="mt-2 text-2xl font-bold">It landed</div>
-    <div class="mt-2 small">Labor productivity <b>~1.6% → ~2.7%/yr</b>. IT ≈ <b>half</b> the step-up; <b>~⅔</b> with computer production.</div>
+    <div class="mt-2 small">productivity <b>1.6% → 2.7%/yr</b> · IT ≈ <b>half</b></div>
   </div>
-  <div class="metric" style="border-left-color:#64748b;">
+  <div class="metric" style="border-left-color:#64748b;" v-click>
     <div class="number" style="color:#64748b;font-size:23px;">2005–2019</div>
-    <div class="mt-2 text-2xl font-bold">Faded — the redesign stalled, not the tech</div>
-    <div class="mt-2 small">Growth slowed despite internet, smartphones, and cloud. Payoff is contingent, not permanent.</div>
+    <div class="mt-2 text-2xl font-bold">Faded</div>
+    <div class="mt-2 small">redesign stalled, not the tech · contingent, not permanent</div>
   </div>
 </div>
 
@@ -441,21 +458,21 @@ The lesson is two words: patience, but not faith. The payoff can be delayed, par
 # Most AI today is still bolted on
 
 <div class="twocol mt-5">
-  <div class="box" style="background:#fff7ed;border-color:#fdba74;">
+  <div class="box" style="background:#fff7ed;border-color:#fdba74;" v-click>
     <div class="text-2xl font-bold" style="color:#b45309;">Bolt-on (retrofit)</div>
-    <div class="mt-3 small"><b>opencode</b> as a faster autocomplete — same repo, same pull request, same review, same "done." Real gains (double-digit task speedups, Brynjolfsson et al. 2023) — but the workflow is unchanged.</div>
-    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. Org chart &amp; "done" unchanged.</div>
+    <div class="mt-3 small">opencode → faster autocomplete<br/>same repo · PR · review · "done"<br/>real gains · workflow unchanged</div>
+    <div class="mt-3 small" style="color:#b45309;font-weight:700;">You type less. "Done" unchanged.</div>
   </div>
-  <div class="box" style="background:#ecfdf5;border-color:#5eead4;">
+  <div class="box" style="background:#ecfdf5;border-color:#5eead4;" v-click>
     <div class="text-2xl font-bold" style="color:#0f766e;">Re-architect (redesign)</div>
-    <div class="mt-3 small">Agent owns a ticket end-to-end · your tests/CI = the gate it must pass · review &amp; accountability for agent PRs redesigned · <b>on-prem model → a private learning loop on your own code</b> (a SaaS Copilot can't).</div>
-    <div class="mt-3 small" style="color:#0f766e;font-weight:700;">Org chart &amp; "done" change — this is what moves the numbers.</div>
+    <div class="mt-3 small">agent owns a ticket end-to-end<br/>tests / CI = the gate<br/>review &amp; accountability redesigned<br/><b>on-prem → private learning loop on your code</b></div>
+    <div class="mt-3 small" style="color:#0f766e;font-weight:700;">Org chart &amp; "done" change → moves the numbers.</div>
   </div>
 </div>
 
-<div class="mt-4 claim">A friendly self-check (not a scorecard): has it changed our org chart or our definition of "done" yet? Bolt-on is the natural first step — the fun question is what our re-architect moment looks like.</div>
+<div class="mt-4 claim">Self-check (not a scorecard): has it changed our org chart or our "definition of done" yet?</div>
 
-<div class="mt-2 small muted"><i>And from inside, you can't yet tell which you built: Klarna rebuilt its queue around AI in 2024 — then re-hired humans in 2025.</i></div>
+<div class="mt-2 small muted"><i>From inside, you can't tell yet: Klarna rebuilt around AI in 2024 → re-hired humans in 2025.</i></div>
 
 <div class="source">Brynjolfsson, Li &amp; Raymond 2023 (NBER w31161); Klarna 2024–25 (company/press). Lens, not prophecy — David 1990 p.360: "Computers are not dynamos."</div>
 
