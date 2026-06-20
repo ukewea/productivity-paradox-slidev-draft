@@ -32,33 +32,27 @@ Paul David 這篇 paper 當時要處理的是一個很具體的問題:為什麼 
 
 ---
 
-## Slide 3 — First lag: adoption itself took decades
+## Slide 3 — Adoption first, payoff later
 
-先看電氣化的第一個 lag:從變得可用、變得可見,到真的進入工廠核心,花了很久。
+先看左邊,這是電氣化的第一個 lag:從變得可用、變得可見,到真的進入工廠核心,花了很久。
 
 實用電燈大概 1879 年出現,中央電站在 1880s 初開始供電。但二十年後,到 1899 年,工廠機械動力裡面用電的比例還不到 5%。要到 1919 年左右,才大概一半。也就是說,一個大家都知道很重要的技術,要進入核心生產流程,還是花了非常久。
 
-這張 diffusion chart 只回答一個問題:adoption 慢不慢?答案是,非常慢。
+左邊這張 diffusion chart 只回答一個問題:adoption 慢不慢?答案是,非常慢。
 
-但它還沒有回答另一個問題:生產力後來到底有沒有真的上來?所以我們下一張看 productivity evidence。
+但它還沒有回答另一個問題:生產力後來到底有沒有真的上來?所以這時候 click,看右邊的 productivity evidence。
 
----
-
-## Slide 4 — Payoff evidence: productivity jumped in the 1920s
-
-這張才是 productivity evidence。
-
-這裡不用講資料表細節。你可以先把 TFP 當成一個很粗略的「整體生產效率」指標:扣掉更多人、更多機器、更多材料之後,剩下來的效率提升。
+右邊這張不用講資料表細節。你可以先把 TFP 當成一個很粗略的「整體生產效率」指標:扣掉更多人、更多機器、更多材料之後,剩下來的效率提升。
 
 這張圖畫的不是 TFP 水準本身,而是 TFP 的平均年成長率。1909 到 1919 年,美國製造業 TFP 成長率大概只有每年 0.17%。可是 1919 到 1929 年,跳到每年 5.29%。所以口語一點講,1920 年代真的有一波製造業生產力大爆發;比較精準地講,是生產力成長速度大幅加速。
 
-所以我們有兩個分開的事實:第一,電氣化進入工廠核心很慢;第二,後來 1920 年代的製造業 productivity 的確明顯跳起來。
+所以這一張 slide 有兩個分開的事實:第一,電氣化進入工廠核心很慢;第二,後來 1920 年代的製造業 productivity 的確明顯跳起來。它不是要說左邊直接造成右邊,而是把 adoption lag 和 payoff lag 放在一起看。
 
 接下來真正有趣的問題是:中間發生了什麼?為什麼一個技術從「被採用」到「真的改變生產力」中間會隔這麼久?
 
 ---
 
-## Slide 5 — Redesign mechanism:新馬達，舊軸心
+## Slide 4 — Redesign mechanism:新馬達，舊軸心
 
 中間的機制,可以先從照片看起。
 
@@ -72,7 +66,7 @@ Paul David 這篇 paper 當時要處理的是一個很具體的問題:為什麼 
 
 ---
 
-## Slide 6 — 電腦:David 大致上猜對,但不是立刻對
+## Slide 5 — 電腦:David 大致上猜對,但不是立刻對
 
 那從事後來看,David 對不對?我覺得答案是:大致上對,但不是那種「買了電腦,生產力立刻上來」的對。
 
@@ -84,7 +78,7 @@ Paul David 這篇 paper 當時要處理的是一個很具體的問題:為什麼 
 
 ---
 
-## Slide 7 — AI:old shaft or redesigned workflow?
+## Slide 6 — AI:old shaft or redesigned workflow?
 
 回到今天的 AI。
 
@@ -98,7 +92,7 @@ Paul David 這篇 paper 當時要處理的是一個很具體的問題:為什麼 
 
 ---
 
-## Slide 8 — 收尾:先普及,後重組,再回頭看見 productivity
+## Slide 7 — 收尾:先普及,後重組,再回頭看見 productivity
 
 我最後想把 David 的 lesson 拉回來。
 

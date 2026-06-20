@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Manufacturing productivity growth jumped in the 1920s</title>
+  <desc id="desc">A compact bar chart showing U.S. manufacturing TFP growth rates: 0.86 percent in 1889-1899, 0.50 percent in 1899-1909, 0.17 percent in 1909-1919, and 5.29 percent in 1919-1929.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .axis { stroke: #64748b; stroke-width: 2; }
+    .grid { stroke: #cbd5e1; stroke-width: 1; }
+    .bar { fill: #94a3b8; }
+    .hot { fill: #0f766e; }
+    .muted { fill: #64748b; font: 16px Inter, Arial, sans-serif; }
+    .label { fill: #0f172a; font: 700 16px Inter, Arial, sans-serif; }
+    .value { fill: #0f172a; font: 800 18px Inter, Arial, sans-serif; }
+    .hotValue { fill: #0f766e; font: 800 24px Inter, Arial, sans-serif; }
+    .title { fill: #0f172a; font: 800 24px Inter, Arial, sans-serif; }
+  </style>
+  <rect class="bg" width="600" height="360"/>
+  <text class="title" x="36" y="38">Manufacturing TFP growth</text>
+  <text class="muted" x="36" y="62">Average annual growth, percent per year</text>
+
+  <line class="grid" x1="70" y1="90" x2="548" y2="90"/>
+  <line class="grid" x1="70" y1="150" x2="548" y2="150"/>
+  <line class="grid" x1="70" y1="210" x2="548" y2="210"/>
+  <line class="axis" x1="70" y1="270" x2="548" y2="270"/>
+  <line class="axis" x1="70" y1="90" x2="70" y2="270"/>
+
+  <text class="muted" x="42" y="95">6%</text>
+  <text class="muted" x="42" y="155">4%</text>
+  <text class="muted" x="42" y="215">2%</text>
+  <text class="muted" x="42" y="275">0%</text>
+
+  <rect class="bar" x="103" y="244" width="72" height="26"/>
+  <rect class="bar" x="213" y="255" width="72" height="15"/>
+  <rect class="bar" x="323" y="265" width="72" height="5"/>
+  <rect class="hot" x="433" y="111" width="72" height="159"/>
+
+  <text class="value" x="119" y="236">0.86</text>
+  <text class="value" x="229" y="247">0.50</text>
+  <text class="value" x="339" y="257">0.17</text>
+  <text class="hotValue" x="444" y="99">5.29</text>
+
+  <text class="label" x="94" y="297">1889-99</text>
+  <text class="label" x="204" y="297">1899-09</text>
+  <text class="label" x="314" y="297">1909-19</text>
+  <text class="label" x="424" y="297">1919-29</text>
+</svg>

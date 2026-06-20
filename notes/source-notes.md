@@ -35,6 +35,8 @@
 - Factory mechanical drive electrified moved from 4.8% in 1899 to 53.1% in 1919 in David 1989 Table 3.
 - Factory electrification gained real momentum after 1914-17, with lower electricity rates relative to the general price level and the rise of central-station generation.
 - David 1990 p.359 says the rise in secondary electric motor capacity statistically accounts for approximately half of the 1919-29 acceleration in aggregate U.S. manufacturing TFP growth. Do not present unit drive as the only cause.
+- Do not use electrification diffusion rate as a direct proxy for TFP growth. The factory-drive electrification curve is adoption evidence; the manufacturing TFP bars are productivity evidence. It is safe to say high diffusion in the 1920s made a productivity payoff more plausible and visible, but not that a specific diffusion threshold mechanically caused the TFP surge.
+- The 1929 `~78%` diffusion point is not "primary motor diffusion." It is primary plus secondary electric motor horsepower as a share of total mechanical-drive horsepower in manufacturing.
 
 ## Secondary Electric Motor
 

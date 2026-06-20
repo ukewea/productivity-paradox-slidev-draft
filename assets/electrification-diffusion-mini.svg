@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-labelledby="title desc">
+  <title id="title">Factory electrification diffused slowly</title>
+  <desc id="desc">A compact line chart showing factory mechanical drive electrified in U.S. manufacturing: under 5 percent in 1899, about 53 percent in 1919, and about 78 percent in 1929.</desc>
+  <style>
+    .bg { fill: #f8fafc; }
+    .axis { stroke: #64748b; stroke-width: 2; }
+    .grid { stroke: #cbd5e1; stroke-width: 1; }
+    .line { fill: none; stroke: #0f766e; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    .dot { fill: #0f766e; }
+    .muted { fill: #64748b; font: 16px Inter, Arial, sans-serif; }
+    .label { fill: #0f172a; font: 700 17px Inter, Arial, sans-serif; }
+    .big { fill: #0f766e; font: 800 24px Inter, Arial, sans-serif; }
+    .title { fill: #0f172a; font: 800 24px Inter, Arial, sans-serif; }
+  </style>
+  <rect class="bg" width="600" height="360"/>
+  <text class="title" x="36" y="38">Factory electrification</text>
+  <text class="muted" x="36" y="62">Factory mechanical drive electrified</text>
+
+  <line class="grid" x1="70" y1="90" x2="548" y2="90"/>
+  <line class="grid" x1="70" y1="150" x2="548" y2="150"/>
+  <line class="grid" x1="70" y1="210" x2="548" y2="210"/>
+  <line class="axis" x1="70" y1="270" x2="548" y2="270"/>
+  <line class="axis" x1="70" y1="90" x2="70" y2="270"/>
+
+  <text class="muted" x="31" y="95">80%</text>
+  <text class="muted" x="31" y="155">50%</text>
+  <text class="muted" x="40" y="275">0%</text>
+
+  <polyline class="line" points="70,269 179,259 234,244 289,214 344,185 399,151 454,119 508,94"/>
+  <circle class="dot" cx="179" cy="259" r="7"/>
+  <circle class="dot" cx="399" cy="151" r="7"/>
+  <circle class="dot" cx="508" cy="94" r="7"/>
+
+  <text class="label" x="156" y="294">1899</text>
+  <text class="label" x="376" y="294">1919</text>
+  <text class="label" x="485" y="294">1929</text>
+
+  <text class="big" x="145" y="238">&lt;5%</text>
+  <text class="big" x="364" y="133">~50%</text>
+  <text class="big" x="475" y="76">78%</text>
+</svg>

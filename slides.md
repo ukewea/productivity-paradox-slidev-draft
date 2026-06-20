@@ -255,54 +255,43 @@ Keep this slide light. Do not spend main-talk time on GPT definitions, exact dat
 
 ---
 
-<div class="kicker">Diffusion Lag</div>
+<div class="kicker">Diffusion + Payoff Lag</div>
 
-# First lag: adoption itself took decades
+# Adoption first, payoff later
 
-<div class="mt-3">
-  <img src="/assets/electrification-diffusion.svg" class="diagram" style="max-height:330px;" />
+<div class="mt-3" style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;">
+  <div>
+    <div class="small font-bold mb-1">Adoption: factory electrification was slow</div>
+    <img src="/assets/electrification-diffusion-mini.svg" class="diagram" style="max-height:305px;" />
+  </div>
+  <div>
+    <div v-click>
+      <div class="small font-bold mb-1">Payoff: productivity growth jumped later</div>
+      <img src="/assets/manufacturing-tfp-mini.svg" class="diagram" style="max-height:305px;" />
+    </div>
+  </div>
 </div>
 
-<div class="source">David 1990 p.356; David 1989 Table 3. Lighting note in speaker notes.</div>
+<div class="mt-3 subclaim font-bold">Adoption was slow. Productivity payoff showed up decades later.</div>
+
+<div class="source">David 1990 p.356, p.359; David 1989 Tables 2-3. Lighting note in speaker notes.</div>
 
 <!--
 Lead with the punch number: about twenty years after the lightbulb, in 1899, only about 3% of U.S. residences had electric light — 8% even in urban dwellings — and electric motors were less than 5% of factory mechanical drive.
 
 The chart is one line: factory mechanical drive electrified. David says these aggregate measures took roughly another two decades to reach about 50% diffusion.
 
-The main point is what the chart CAN prove: adoption itself was slow. Do not use this chart as productivity evidence.
+The left chart can prove only adoption lag: electrification took a long time to enter the factory core.
 
-(Bridge.) So far we have only shown the first lag: visible electrification did not immediately become core factory adoption. The next question is separate: did measured productivity later jump? That is what the TFP chart handles.
+Then say: adoption is not productivity, so let's look at the productivity numbers. Click to reveal the right chart.
+
+The right chart is the productivity evidence. TFP is the level of overall production efficiency after accounting for inputs; the bars are period-average annual growth rates. The key contrast is 1909-1919 at about 0.17% per year versus 1919-1929 at about 5.29% per year.
+
+The two charts together should not be framed as "the left chart directly causes the right chart." Safer line: adoption was slow, and measured productivity payoff showed up decades later, once electrification had entered the factory core and helped enable redesign.
 
 (Q&A only.) If someone challenges the slope, say the 1920s claim is not about an adoption-curve kink; it is about measured productivity.
 
 (Appendix / only if asked.) The original table also has a "secondary electric motor" series. In David/DuBoff's usage, primary motors ran on purchased electricity from utilities; secondary motors ran on electricity generated inside the plant. Treat secondary-motor penetration as a proxy for deeper factory electrification and unit-drive diffusion, not as a literal motor type. Q&A material — do not spend main-talk time on it.
--->
-
----
-
-<div class="kicker">Payoff Evidence</div>
-
-# Productivity jumped in the 1920s
-
-<div class="mt-4">
-  <img src="/assets/manufacturing-tfp-electrification-era.svg" class="diagram" style="max-height:350px;" />
-</div>
-
-<div class="mt-2 subclaim font-bold">The bars are growth rates: how fast overall production efficiency improved.</div>
-
-<div class="source">David 1989 Table 2; David 1990 p.359. Period-average annual TFP growth rates.</div>
-
-<!--
-Keep this simple. This is not a TFP lecture.
-
-Say: diffusion was only adoption evidence. This slide is the productivity evidence.
-
-Talk-safe wording: TFP is the level of overall production efficiency after accounting for inputs. This chart is not that level; it is the average annual growth rate of that efficiency level. So the clean line is not "TFP exploded in one year." It is: manufacturing productivity growth accelerated sharply in the 1920s.
-
-The key contrast is 1909-1919 at about 0.17% per year versus 1919-1929 at about 5.29% per year.
-
-Then bridge: now that we have evidence of adoption lag and later productivity jump, the real question is mechanism — what can turn a new technology into a new production system?
 -->
 
 ---
