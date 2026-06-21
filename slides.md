@@ -124,7 +124,7 @@ ul {
 .photo-panel img {
   display: block;
   width: 100%;
-  height: 212px;
+  height: 240px;
   object-fit: cover;
   filter: grayscale(100%) contrast(1.05);
 }
@@ -302,9 +302,9 @@ The two charts together should not be framed as "the left chart directly causes 
 
 <div class="photo-pair mt-2">
   <div class="photo-panel">
-    <img src="/assets/kammgarnspinnerei-pfaffendorf-1925.jpg" style="object-position:50% 40%;" />
+    <img src="/assets/line-shaft-floor-machine-shop-core77.png" style="object-position:50% 46%; transform: scaleX(-1);" />
     <div class="label">New motor, old shaft</div>
-    <div class="caption">Kammgarnspinnerei Pfaffendorf, Leipzig, c. 1925.</div>
+    <div class="caption">Line-shaft-driven factory floor, via Core77.</div>
   </div>
   <div class="photo-panel">
     <img src="/assets/marconi-individual-driving-motors.jpg" style="object-position:50% 48%;" />
@@ -315,7 +315,7 @@ The two charts together should not be framed as "the left chart directly causes 
 
 <div class="mt-3 subclaim font-bold">Remove the shaft → machines can follow workflow, not the other way around.</div>
 
-<div class="source">David 1990 p.357-359; Devine 1983. Photos: user-provided Pfaffendorf image; NARA/Wikimedia Commons PD-US.</div>
+<div class="source">David 1990 p.357-359; Devine 1983. Photos: Core77; NARA/Wikimedia Commons PD-US.</div>
 
 <!--
 Keep this to 45-60 seconds.
